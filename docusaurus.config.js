@@ -2,8 +2,8 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 require('dotenv').config()
 
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
+const remarkMath = require('remark-math').default
+const rehypeKatex = require('rehype-katex').default
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {

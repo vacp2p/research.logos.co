@@ -26,7 +26,7 @@
             git        # 2.44.1
             openssh    # 9.7p1
             yarn       # 1.22.22
-            nodejs_20  # v20.15.1
+            nodejs_24  # v24.4.1
             ghp-import # 2.1.0
           ];
         };
