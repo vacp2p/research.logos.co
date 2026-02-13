@@ -1,15 +1,15 @@
 {
-    "timestamp": "2026-02-12T17:05:41Z",
+    "timestamp": "2026-02-13T14:11:25Z",
     "git": {
-        "commit": "97800b52017acc0c558b090fb61e4bc5a701d656",
-        "branch": "origin/develop",
-        "url": "git@github.com:vacp2p/vac.dev.git"
+        "commit": "48bbe1ced448745b85bbe791a81e677ed1472871",
+        "branch": "origin/rename-to-research-logos-co",
+        "url": "git@github.com:vacp2p/research.logos.co.git"
     },
     "build": {
-        "id": "3730",
-        "number": "3730",
-        "name": "website/dev.vac.dev",
+        "id": "3732",
+        "number": "3732",
+        "name": "website/dev-research.logos.co",
         "slave": "linux-02",
-        "url": "https://ci.infra.status.im/job/website/job/dev.vac.dev/3730/"
+        "url": "https://ci.infra.status.im/job/website/job/dev-research.logos.co/3732/"
     }
 }

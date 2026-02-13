@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkresearch_logos_co=self.webpackChunkresearch_logos_co||[]).push([[4395],{68216:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/rlog/page/5","page":5,"postsPerPage":10,"totalPages":5,"totalCount":45,"previousPage":"/rlog/page/4","blogDescription":"Blog","blogTitle":"Research Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkresearch_logos_co=self.webpackChunkresearch_logos_co||[]).push([[6405],{7057:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[]}')}}]);
