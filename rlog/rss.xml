@@ -642,7 +642,7 @@ by lessening the workload on peers located along optimal message forwarding path
 </li>
 </ul>
 <p>Please feel free to join the discussion and leave feedback regarding this post in the
-<a href="https://forum.vac.dev/t/vac-research-blog-performance-evaluation-of-gossipsub-improvement-proposals/556" target="_blank" rel="noopener noreferrer">VAC forum</a>.</p>
+<a href="https://forum.research.logos.co/t/vac-research-blog-performance-evaluation-of-gossipsub-improvement-proposals/556" target="_blank" rel="noopener noreferrer">VAC forum</a>.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://vac.dev/rlog/gsub-perf-imp-comparison#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <p>[1] <a href="https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md" target="_blank" rel="noopener noreferrer">GossipSub v1.1 Specifications</a></p>
 <p>[2] <a href="https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.2.md" target="_blank" rel="noopener noreferrer">GossipSub v1.2 Specifications</a></p>
@@ -888,7 +888,7 @@ about what the community needs for standard benchmarks.
 Would you like to see another implementation added to the
 thunderdome?
 <a href="https://github.com/vacp2p/zerokit/issues/new" target="_blank" rel="noopener noreferrer"><u>Raise an issue</u></a>,
-or join us on <a href="https://forum.vac.dev/" target="_blank" rel="noopener noreferrer"><u>our forum</u></a>. We look
+or join us on <a href="https://forum.research.logos.co/" target="_blank" rel="noopener noreferrer"><u>our forum</u></a>. We look
 forward to seeing your voice added.</p>
 <p>This is just one story, coming out of one relatively small
 project from VAC research. The two driving directives of the
@@ -1635,7 +1635,7 @@ As mentioned, it is essential for users to be able to validate the blockchain's 
 The property of compression and validation was solved in Bitcoin by the use of Merkle trees.
 Merkle trees were introduced first by Ralph Merkle in his dissertation [<a href="https://www.ralphmerkle.com/papers/Thesis1979.pdf" target="_blank" rel="noopener noreferrer">1</a>].
 A Merkle tree is a data structure that compresses a digest of data to a constant size while still providing a method for proving membership of elements of the digest.
-A previous rlog[<a href="https://vac.dev/rlog/rln-light-verifiers/" target="_blank" rel="noopener noreferrer">2</a>] described how Merkle trees with their proof of membership could be used for lightweight clients for RLN.</p>
+A previous rlog[<a href="https://research.logos.co/rlog/rln-light-verifiers/" target="_blank" rel="noopener noreferrer">2</a>] described how Merkle trees with their proof of membership could be used for lightweight clients for RLN.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="tree-structure">Tree structure<a href="https://vac.dev/rlog/climbing-merkle-trees#tree-structure" class="hash-link" aria-label="Direct link to Tree structure" title="Direct link to Tree structure">​</a></h2>
 <p>A tree is a special data structure that organizes nodes so that there is exactly one path between any two nodes.
 The trees that we consider can be arranged in layers with multiple nodes (children) merged into a single node (parent) in the preceding layer.
@@ -1674,7 +1674,7 @@ A natural question to ask is: could a clever party find another digest that yiel
 If possible, this would compromise the ledger since the blockchain's history could be altered.
 Fortunately, Merkle trees are quite secure.
 In fact, Merkle trees can be used to both bind and hide a digest.</p>
-<p>The Merkle tree is able to bind a digest with one of the properties of hash functions (see our previous Vac 101 [<a href="https://vac.dev/rlog/vac101-fiat-shamir#hash-functions" target="_blank" rel="noopener noreferrer">3</a>] for information on hash functions).
+<p>The Merkle tree is able to bind a digest with one of the properties of hash functions (see our previous Vac 101 [<a href="https://research.logos.co/rlog/vac101-fiat-shamir#hash-functions" target="_blank" rel="noopener noreferrer">3</a>] for information on hash functions).
 A hash function is collision resistant; it is infeasible for a malicious party to find two values share the same hash value.</p>
 <p>This collision resistance property, essentially, fixes the input to each leaf and into their parent, their parent's parent, and so on.</p>
 <p>In certain applications,
@@ -1730,7 +1730,7 @@ Thus, it is efficient to maintain a list of values:</p>
 <p>Each of the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">d_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span>'s represents the root hash of a Merkle tree with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">2^i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8247em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span></span></span></span></span></span></span> leaves containing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">u</mi><mi mathvariant="sans-serif">l</mi><mi mathvariant="sans-serif">l</mi></mrow><annotation encoding="application/x-tex">\mathsf{null}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord"><span class="mord mathsf">null</span></span></span></span></span>.
 These values can be used to shorten the time needed to construct an SMT and the length of proofs.</p>
 <h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="proof-of-nonmembership">Proof of nonmembership<a href="https://vac.dev/rlog/climbing-merkle-trees#proof-of-nonmembership" class="hash-link" aria-label="Direct link to Proof of nonmembership" title="Direct link to Proof of nonmembership">​</a></h3>
-<p>In the first Vac 101 [<a href="https://vac.dev/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters" target="_blank" rel="noopener noreferrer">5</a>], we examined Bloom and Cuckoo filters that could be used for proof of membership and nonmembership.
+<p>In the first Vac 101 [<a href="https://research.logos.co/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters" target="_blank" rel="noopener noreferrer">5</a>], we examined Bloom and Cuckoo filters that could be used for proof of membership and nonmembership.
 However, the proof of membership may result in false positives due to collisions.
 This would affect nonmembership proofs as well.
 Sparse Merkle trees can be adapted to provide greater assurance that a given piece of data is not a member of the digest.</p>
@@ -1768,12 +1768,12 @@ We will explore Verkle trees in a future Vac 101 edition.</p>
 </li>
 <li>
 <ol start="2">
-<li><a href="https://vac.dev/rlog/rln-light-verifiers/" target="_blank" rel="noopener noreferrer">Verifying RLN Proofs in Light Clients with Subtrees</a></li>
+<li><a href="https://research.logos.co/rlog/rln-light-verifiers/" target="_blank" rel="noopener noreferrer">Verifying RLN Proofs in Light Clients with Subtrees</a></li>
 </ol>
 </li>
 <li>
 <ol start="3">
-<li><a href="https://vac.dev/rlog/vac101-fiat-shamir#hash-functions" target="_blank" rel="noopener noreferrer">Vac 101: Transforming an Interactive Protocol to a Noninteractive Argument</a></li>
+<li><a href="https://research.logos.co/rlog/vac101-fiat-shamir#hash-functions" target="_blank" rel="noopener noreferrer">Vac 101: Transforming an Interactive Protocol to a Noninteractive Argument</a></li>
 </ol>
 </li>
 <li>
@@ -1783,7 +1783,7 @@ We will explore Verkle trees in a future Vac 101 edition.</p>
 </li>
 <li>
 <ol start="5">
-<li><a href="https://vac.dev/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters" target="_blank" rel="noopener noreferrer">Vac 101: Membership with Bloom Filters and Cuckoo Filters</a></li>
+<li><a href="https://research.logos.co/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters" target="_blank" rel="noopener noreferrer">Vac 101: Membership with Bloom Filters and Cuckoo Filters</a></li>
 </ol>
 </li>
 <li>
@@ -2040,8 +2040,8 @@ the receiver can request to defer this transmission by sending a brief IMReceivi
 On the other hand, proceeding with message transfer (after sending the preamble) leads to another problem:
 it is difficult to cancel ongoing message transmission after receiving IMReceiving for the same message.</p>
 <p>To streamline this process, a peer can immediately send an IMReceiving message (for every received preamble),
-urging other mesh peers to defer sending the same message [<a href="https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">15</a>,
-<a href="https://forum.vac.dev/t/idontwant-message-impact/283" target="_blank" rel="noopener noreferrer">16</a>].</p>
+urging other mesh peers to defer sending the same message [<a href="https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">15</a>,
+<a href="https://forum.research.logos.co/t/idontwant-message-impact/283" target="_blank" rel="noopener noreferrer">16</a>].</p>
 <p>The other peers can send this message if IDONTWANT is not received from the receiver during the wait interval.
 This approach can boost IDONTWANT benefits by considering ongoing transmissions for large messages.</p>
 <p>While IMReceiving messages can bring about substantial improvements in terms of latency and bandwidth utilization,
@@ -2150,11 +2150,11 @@ At the same time, strategies aimed at reducing store-and-forward delays
 (fragmentation, staggering, prioritization, etc.) can prove beneficial.</p>
 <p>It is worth mentioning that many of the strategies suggested in this post are ideas at different stages.
 Some of these have already been explored and discussed to some extent [<a href="https://hackmd.io/X1DoBHtYTtuGqYg0qK4zJw" target="_blank" rel="noopener noreferrer">5</a>,
-<a href="https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">17</a>,
-<a href="https://vac.dev/rlog/gsub-idontwant-perf-eval/" target="_blank" rel="noopener noreferrer">18</a>].
+<a href="https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">17</a>,
+<a href="https://research.logos.co/rlog/gsub-idontwant-perf-eval/" target="_blank" rel="noopener noreferrer">18</a>].
 We are nearing the completion of a comprehensive performance evaluation of these approaches and will soon share the results of our findings.</p>
 <p>Please feel free to join the discussion and leave feedback regarding this post in the
-<a href="https://forum.vac.dev/t/large-message-handling-in-gossipsub-potential-improvements/375" target="_blank" rel="noopener noreferrer">VAC forum</a>.</p>
+<a href="https://forum.research.logos.co/t/large-message-handling-in-gossipsub-potential-improvements/375" target="_blank" rel="noopener noreferrer">VAC forum</a>.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://vac.dev/rlog/gsub-largemsg-improvements#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <p>[1] EIP-4844: Shard Blob Transactions. Retrieved from <a href="https://eips.ethereum.org/EIPS/eip-4844" target="_blank" rel="noopener noreferrer">https://eips.ethereum.org/EIPS/eip-4844</a></p>
 <p>[2] Message Propagation Times With Waku-RLN. Retrieved from <a href="https://docs.waku.org/research/research-and-studies/message-propagation/" target="_blank" rel="noopener noreferrer">https://docs.waku.org/research/research-and-studies/message-propagation/</a></p>
@@ -2170,10 +2170,10 @@ We are nearing the completion of a comprehensive performance evaluation of these
 <p>[12] TCP Congestion Control: Re-starting Idle Connections. Retrieved from <a href="https://datatracker.ietf.org/doc/html/rfc2581#section-4.1" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/html/rfc2581#section-4.1</a></p>
 <p>[13] PING/PONG Control Messages. Retrieved from <a href="https://github.com/libp2p/specs/pull/558" target="_blank" rel="noopener noreferrer">https://github.com/libp2p/specs/pull/558</a></p>
 <p>[14] IHAVE/IWANT Message Impact. Retrieved from <a href="https://github.com/vacp2p/nim-libp2p/issues/1101" target="_blank" rel="noopener noreferrer">https://github.com/vacp2p/nim-libp2p/issues/1101</a></p>
-<p>[15] Large Message Handling IDONTWANT + IMReceiving Messages. Retrieved from <a href="https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281</a></p>
-<p>[16] IDONTWANT Message Impact. Retrieved from <a href="https://forum.vac.dev/t/idontwant-message-impact/283" target="_blank" rel="noopener noreferrer">https://forum.vac.dev/t/idontwant-message-impact/283</a></p>
-<p>[17] IWANT Message Impact. Retrieved from <a href="https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366</a></p>
-<p>[18] IDONTWANT Message Performance. Retrieved from <a href="https://vac.dev/rlog/gsub-idontwant-perf-eval/" target="_blank" rel="noopener noreferrer">https://vac.dev/rlog/gsub-idontwant-perf-eval/</a></p>]]></content:encoded>
+<p>[15] Large Message Handling IDONTWANT + IMReceiving Messages. Retrieved from <a href="https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281</a></p>
+<p>[16] IDONTWANT Message Impact. Retrieved from <a href="https://forum.research.logos.co/t/idontwant-message-impact/283" target="_blank" rel="noopener noreferrer">https://forum.research.logos.co/t/idontwant-message-impact/283</a></p>
+<p>[17] IWANT Message Impact. Retrieved from <a href="https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366</a></p>
+<p>[18] IDONTWANT Message Performance. Retrieved from <a href="https://research.logos.co/rlog/gsub-idontwant-perf-eval/" target="_blank" rel="noopener noreferrer">https://research.logos.co/rlog/gsub-idontwant-perf-eval/</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Libp2p GossipSub IDONTWANT Message Performance Impact]]></title>
@@ -2226,10 +2226,10 @@ compared to 500KB messages (18-21%).</p>
 <table><thead><tr><th><div class="wrapper_SWrM active_qZD5"><img decoding="async" loading="lazy" alt="Image 1" src="https://vac.dev/assets/images/BW_700ms-54baea410c768c9ccbe8313c7ab3f992.png" width="1982" height="1157" class="img_ev3q"><button class="fullscreenButton_Bocn lsd-icon-button lsd-icon-button--medium lsd-icon-button--outlined"><div class="icon_S7Kx m_thRi"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="#fff" d="M1.75 2.917V5.25h1.167V2.917H5.25V1.75H2.917A1.17 1.17 0 0 0 1.75 2.917M2.917 8.75H1.75v2.333a1.17 1.17 0 0 0 1.167 1.167H5.25v-1.167H2.917zm8.166 2.333H8.75v1.167h2.333a1.17 1.17 0 0 0 1.167-1.167V8.75h-1.167zm0-9.333H8.75v1.167h2.333V5.25h1.167V2.917a1.17 1.17 0 0 0-1.167-1.167"></path></svg></div></button></div></th><th><div class="wrapper_SWrM active_qZD5"><img decoding="async" loading="lazy" alt="Image 2" src="https://vac.dev/assets/images/BW_1000ms-340307cdf866c54fd52becb4df316fdf.png" width="1982" height="1157" class="img_ev3q"><button class="fullscreenButton_Bocn lsd-icon-button lsd-icon-button--medium lsd-icon-button--outlined"><div class="icon_S7Kx m_thRi"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="#fff" d="M1.75 2.917V5.25h1.167V2.917H5.25V1.75H2.917A1.17 1.17 0 0 0 1.75 2.917M2.917 8.75H1.75v2.333a1.17 1.17 0 0 0 1.167 1.167H5.25v-1.167H2.917zm8.166 2.333H8.75v1.167h2.333a1.17 1.17 0 0 0 1.167-1.167V8.75h-1.167zm0-9.333H8.75v1.167h2.333V5.25h1.167V2.917a1.17 1.17 0 0 0-1.167-1.167"></path></svg></div></button></div></th><th><div class="wrapper_SWrM active_qZD5"><img decoding="async" loading="lazy" alt="Image 3" src="https://vac.dev/assets/images/BW_1500ms-d3b9c0f60549d0c6fabe47b548024f41.png" width="1982" height="1157" class="img_ev3q"><button class="fullscreenButton_Bocn lsd-icon-button lsd-icon-button--medium lsd-icon-button--outlined"><div class="icon_S7Kx m_thRi"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="#fff" d="M1.75 2.917V5.25h1.167V2.917H5.25V1.75H2.917A1.17 1.17 0 0 0 1.75 2.917M2.917 8.75H1.75v2.333a1.17 1.17 0 0 0 1.167 1.167H5.25v-1.167H2.917zm8.166 2.333H8.75v1.167h2.333a1.17 1.17 0 0 0 1.167-1.167V8.75h-1.167zm0-9.333H8.75v1.167h2.333V5.25h1.167V2.917a1.17 1.17 0 0 0-1.167-1.167"></path></svg></div></button></div></th></tr></thead></table>
 <p>This is because downloading a large message may consume several hundred milliseconds.
 During this time, a receiver will likely
-<a href="https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">generate multiple IWANT requests</a>
+<a href="https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">generate multiple IWANT requests</a>
 for the same message, increasing bandwidth utilization.</p>
 <p>Moreover, a peer can generate
-<a href="https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">IDONTWANTs only after it has finished downloading the message</a>.
+<a href="https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">IDONTWANTs only after it has finished downloading the message</a>.
 A longer download time will result in simultaneous reception of the same message from other mesh members.</p>
 <table><thead><tr><th><div class="wrapper_SWrM active_qZD5"><img decoding="async" loading="lazy" alt="Image 1" src="https://vac.dev/assets/images/IWANT_Requests-a19c04fc0a361e98075caa8e7cb1885a.png" width="1982" height="1157" class="img_ev3q"><button class="fullscreenButton_Bocn lsd-icon-button lsd-icon-button--medium lsd-icon-button--outlined"><div class="icon_S7Kx m_thRi"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="#fff" d="M1.75 2.917V5.25h1.167V2.917H5.25V1.75H2.917A1.17 1.17 0 0 0 1.75 2.917M2.917 8.75H1.75v2.333a1.17 1.17 0 0 0 1.167 1.167H5.25v-1.167H2.917zm8.166 2.333H8.75v1.167h2.333a1.17 1.17 0 0 0 1.167-1.167V8.75h-1.167zm0-9.333H8.75v1.167h2.333V5.25h1.167V2.917a1.17 1.17 0 0 0-1.167-1.167"></path></svg></div></button></div></th><th><div class="wrapper_SWrM active_qZD5"><img decoding="async" loading="lazy" alt="Image 2" src="https://vac.dev/assets/images/IDONTWANT_Saves-463b248e2a1ee7995919cec733576159.png" width="1982" height="1157" class="img_ev3q"><button class="fullscreenButton_Bocn lsd-icon-button lsd-icon-button--medium lsd-icon-button--outlined"><div class="icon_S7Kx m_thRi"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="#fff" d="M1.75 2.917V5.25h1.167V2.917H5.25V1.75H2.917A1.17 1.17 0 0 0 1.75 2.917M2.917 8.75H1.75v2.333a1.17 1.17 0 0 0 1.167 1.167H5.25v-1.167H2.917zm8.166 2.333H8.75v1.167h2.333a1.17 1.17 0 0 0 1.167-1.167V8.75h-1.167zm0-9.333H8.75v1.167h2.333V5.25h1.167V2.917a1.17 1.17 0 0 0-1.167-1.167"></path></svg></div></button></div></th></tr></thead></table>
 <p>These IWANT requests mainly overwhelm early message receivers,
@@ -2239,15 +2239,15 @@ Therefore, a similar message dissemination time is seen with and without IDONTWA
 <p>Similar results are seen on our large-scale deployment runs
 (<a href="https://zealous-polka-dc7.notion.site/Nim-libp2p-v1-5-0-regression-testing-August-2024-25edba733c704ccaa411919555c5db1a" target="_blank" rel="noopener noreferrer">running Waku nodes in Kubernetes</a>).</p>
 <p>Please feel free to join the discussion and leave feedback regarding this post in the
-<a href="https://forum.vac.dev/t/libp2p-gossipsub-idontwant-message-performance-impact/374" target="_blank" rel="noopener noreferrer">VAC forum</a>.</p>
+<a href="https://forum.research.logos.co/t/libp2p-gossipsub-idontwant-message-performance-impact/374" target="_blank" rel="noopener noreferrer">VAC forum</a>.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://vac.dev/rlog/gsub-idontwant-perf-eval#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <ul>
 <li><a href="https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.2.md" target="_blank" rel="noopener noreferrer">GossipSub Specifications v1.2</a></li>
 <li><a href="https://github.com/libp2p/specs/pull/548" target="_blank" rel="noopener noreferrer">GossipSub v1.2: IDONTWANT Control Message</a></li>
 <li><a href="https://ethresear.ch/t/number-duplicate-messages-in-ethereums-gossipsub-network/19921" target="_blank" rel="noopener noreferrer">Number Duplicate Messages in Ethereum’s Gossipsub Network</a></li>
-<li><a href="https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">IWANT Messages Impact on Latency </a></li>
-<li><a href="https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">Large Message Handling (IDONTWANT + IMReceiving)</a></li>
-<li><a href="https://forum.vac.dev/t/idontwant-message-impact/283" target="_blank" rel="noopener noreferrer">IDONTWANT Message Impact Before/After Message Validation</a></li>
+<li><a href="https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366" target="_blank" rel="noopener noreferrer">IWANT Messages Impact on Latency </a></li>
+<li><a href="https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281" target="_blank" rel="noopener noreferrer">Large Message Handling (IDONTWANT + IMReceiving)</a></li>
+<li><a href="https://forum.research.logos.co/t/idontwant-message-impact/283" target="_blank" rel="noopener noreferrer">IDONTWANT Message Impact Before/After Message Validation</a></li>
 <li><a href="https://hackmd.io/X1DoBHtYTtuGqYg0qK4zJw#2" target="_blank" rel="noopener noreferrer">GossipSub for Big Messages</a></li>
 <li><a href="https://zealous-polka-dc7.notion.site/Nim-libp2p-v1-5-0-regression-testing-August-2024-25edba733c704ccaa411919555c5db1a" target="_blank" rel="noopener noreferrer">Regression Test Results: nim-libp2p</a></li>
 </ul>]]></content:encoded>
@@ -2490,8 +2490,8 @@ Additionally, careful application of this technique is necessary to maintain the
             <pubDate>Thu, 26 Sep 2024 12:00:00 GMT</pubDate>
             <description><![CDATA[{/ truncate /}]]></description>
             <content:encoded><![CDATA[
-<p>Following our initial exploration of zkVMs in our previous blog post [<a href="https://vac.dev/rlog/zkVM-explorations/" target="_blank" rel="noopener noreferrer">1</a>],
-we have conducted a series of tests to identify the most suitable zkVM for the Nescience architecture [<a href="https://vac.dev/rlog/Nescience-state-separation-architecture" target="_blank" rel="noopener noreferrer">2</a>].
+<p>Following our initial exploration of zkVMs in our previous blog post [<a href="https://research.logos.co/rlog/zkVM-explorations/" target="_blank" rel="noopener noreferrer">1</a>],
+we have conducted a series of tests to identify the most suitable zkVM for the Nescience architecture [<a href="https://research.logos.co/rlog/Nescience-state-separation-architecture" target="_blank" rel="noopener noreferrer">2</a>].
 This post outlines the testing process, results, and conclusions. Additionally, the full test suite and scripts can be found
 on our GitHub page [<a href="https://github.com/vacp2p/nescience-zkvm-testing" target="_blank" rel="noopener noreferrer">3</a>], allowing others to replicate the results or explore the candidates further.
 Please note that we chose not to use hardware acceleration in our benchmarks, as our project is aimed at a broad audience.
@@ -2751,11 +2751,11 @@ enabling a fairer and more comprehensive comparison across platforms.</p>
 <p>We’d love to hear your thoughts on our zkVM testing process and results! Do you agree with our conclusions, or do you think we missed a promising zkVM?
 We’re always open to feedback, insights, and suggestions from the community.</p>
 <p>Join the discussion and share your perspectives on
-<a href="https://forum.vac.dev/t/zkvm-testing-report-evaluating-zero-knowledge-virtual-machines-for-nescience/" target="_blank" rel="noopener noreferrer">our forum</a> or try out the
+<a href="https://forum.research.logos.co/t/zkvm-testing-report-evaluating-zero-knowledge-virtual-machines-for-nescience/" target="_blank" rel="noopener noreferrer">our forum</a> or try out the
 tests yourself through our <a href="https://github.com/vacp2p/nescience-zkvm-testing" target="_blank" rel="noopener noreferrer">GitHub page</a>!</p>
 <h1>References</h1>
-<p>[1] Exploring zkVMs: Which Projects Truly Qualify as Zero-Knowledge Virtual Machines? Retrieved from <a href="https://vac.dev/rlog/zkVM-explorations/" target="_blank" rel="noopener noreferrer">https://vac.dev/rlog/zkVM-explorations/</a></p>
-<p>[2] Nescience: A User-Centric State-Separation Architecture. Retrieved from <a href="https://vac.dev/rlog/Nescience-state-separation-architecture" target="_blank" rel="noopener noreferrer">https://vac.dev/rlog/Nescience-state-separation-architecture</a></p>
+<p>[1] Exploring zkVMs: Which Projects Truly Qualify as Zero-Knowledge Virtual Machines? Retrieved from <a href="https://research.logos.co/rlog/zkVM-explorations/" target="_blank" rel="noopener noreferrer">https://research.logos.co/rlog/zkVM-explorations/</a></p>
+<p>[2] Nescience: A User-Centric State-Separation Architecture. Retrieved from <a href="https://research.logos.co/rlog/Nescience-state-separation-architecture" target="_blank" rel="noopener noreferrer">https://research.logos.co/rlog/Nescience-state-separation-architecture</a></p>
 <p>[3] Our GitHub Page for zkVM Testing. Retrieved from <a href="https://github.com/vacp2p/nescience-zkvm-testing" target="_blank" rel="noopener noreferrer">https://github.com/vacp2p/nescience-zkvm-testing</a></p>
 <p>[4] Introducing SP1: A performant, 100% open-source, contributor-friendly zkVM. Retrieved from <a href="https://blog.succinct.xyz/introducing-sp1/" target="_blank" rel="noopener noreferrer">https://blog.succinct.xyz/introducing-sp1/</a></p>
 <p>[5] The first general purpose zkVM. Retrieved from <a href="https://www.risczero.com/zkvm" target="_blank" rel="noopener noreferrer">https://www.risczero.com/zkvm</a></p>
@@ -3046,7 +3046,7 @@ scenarios where proof generation and scalability are paramount, but privacy is n
 This ongoing development will likely broaden the application of zkVMs across the blockchain ecosystem, particularly in privacy-sensitive sectors such as finance, data security,
 and decentralized applications.</p>
 <p>What are your thoughts on our zkVM analysis? Do you agree with our findings, or do you know of other zkVM projects that should be on our radar? We would love to hear your insights, questions,
-or suggestions! Feel free to join the <a href="https://forum.vac.dev/t/exploring-zkvms-which-projects-truly-qualify-as-zero-knowledge-virtual-machines/317" target="_blank" rel="noopener noreferrer">discussion</a> on our forum.</p>
+or suggestions! Feel free to join the <a href="https://forum.research.logos.co/t/exploring-zkvms-which-projects-truly-qualify-as-zero-knowledge-virtual-machines/317" target="_blank" rel="noopener noreferrer">discussion</a> on our forum.</p>
 <h1>References</h1>
 <p>[1] Introducing SP1: A performant, 100% open-source, contributor-friendly zkVM. Retrieved from <a href="https://blog.succinct.xyz/introducing-sp1/" target="_blank" rel="noopener noreferrer">https://blog.succinct.xyz/introducing-sp1/</a></p>
 <p>[2] The Nexus 2.0 zkVM. Retrieved from <a href="https://docs.nexus.xyz/" target="_blank" rel="noopener noreferrer">https://docs.nexus.xyz/</a></p>
@@ -4384,11 +4384,11 @@ However, an append that does not require any shuffling in a Cuckoo filter can be
 Cuckoo filters make up for these disadvantages with quicker query time and the ability to delete entries.
 Further, the probability of false positives in Cuckoo filters is lower than the probability of false positives in Bloom filters.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="combining-filters-with-rln">Combining Filters with RLN<a href="https://vac.dev/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters#combining-filters-with-rln" class="hash-link" aria-label="Direct link to Combining Filters with RLN" title="Direct link to Combining Filters with RLN">​</a></h2>
-<p>In a series of posts (<a href="https://vac.dev/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">1</a>,<a href="https://vac.dev/rlog/rln-v3/" target="_blank" rel="noopener noreferrer">2</a>,<a href="https://vac.dev/rlog/rln-light-verifiers" target="_blank" rel="noopener noreferrer">3</a>),
+<p>In a series of posts (<a href="https://research.logos.co/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">1</a>,<a href="https://vac.dev/rlog/rln-v3/" target="_blank" rel="noopener noreferrer">2</a>,<a href="https://vac.dev/rlog/rln-light-verifiers" target="_blank" rel="noopener noreferrer">3</a>),
 various versons of rate limiting nullifiers (RLN) that are used by Waku has been discussed.
 RLN uses a sparse Merkle tree for the membership set.
 The computational power required to construct the Merkle tree prevent light clients from participating in verifying membership proofs.
-In <a href="https://vac.dev/rlog/rln-light-verifiers" target="_blank" rel="noopener noreferrer">Verifying RLN Proofs in Light Clients with Subtrees</a>,
+In <a href="https://research.logos.co/rlog/rln-light-verifiers" target="_blank" rel="noopener noreferrer">Verifying RLN Proofs in Light Clients with Subtrees</a>,
 it was proposed to move the membership set on-chain so that it would not be necessary for a light client to construct the entire Merkle tree locally.
 Unfortunately, the naive approach is not practical as the gas limit for a single call is too restrictive for an appropriately sized tree.
 Instead, it was proposed to make utilize of subtrees.
@@ -4413,9 +4413,9 @@ However, with the allowance of false positives, a light client can participate i
 <li><a href="https://people.eecs.berkeley.edu/~daw/teaching/cs170-s03/Notes/lecture10.pdf" target="_blank" rel="noopener noreferrer">David Wagner's Lecture Notes on Bloom filters</a></li>
 <li><a href="https://eprint.iacr.org/2023/1208" target="_blank" rel="noopener noreferrer">Mutator Sets and their Application to Scalable Privacy</a></li>
 <li><a href="https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf" target="_blank" rel="noopener noreferrer">Cuckoo Filter: Practically Better than Bloom</a></li>
-<li><a href="https://vac.dev/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a></li>
-<li><a href="https://vac.dev/rlog/rln-v3/" target="_blank" rel="noopener noreferrer">RLN-v3: Towards a Flexible and Cost-Efficient Implementation</a></li>
-<li><a href="https://vac.dev/rlog/rln-light-verifiers" target="_blank" rel="noopener noreferrer">Verifying RLN Proofs in Light Clients with Subtrees</a></li>
+<li><a href="https://research.logos.co/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a></li>
+<li><a href="https://research.logos.co/rlog/rln-v3/" target="_blank" rel="noopener noreferrer">RLN-v3: Towards a Flexible and Cost-Efficient Implementation</a></li>
+<li><a href="https://research.logos.co/rlog/rln-light-verifiers" target="_blank" rel="noopener noreferrer">Verifying RLN Proofs in Light Clients with Subtrees</a></li>
 <li><a href="https://rate-limiting-nullifier.github.io/rln-docs/rln_in_details.html" target="_blank" rel="noopener noreferrer">RLN in details</a></li>
 </ul>]]></content:encoded>
         </item>
@@ -4428,7 +4428,7 @@ However, with the allowance of false positives, a light client can participate i
             <content:encoded><![CDATA[<p>Improving on the previous version of RLN by allowing dynamic epoch sizes.</p>
 <!-- -->
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="introduction">Introduction<a href="https://vac.dev/rlog/rln-v3#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
-<p>Recommended previous reading: <a href="https://vac.dev/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a>.</p>
+<p>Recommended previous reading: <a href="https://research.logos.co/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a>.</p>
 <p>The premise of RLN-v3 is to have a variable message rate per variable epoch,
 which can be explained in the following way:</p>
 <ul>
@@ -4580,7 +4580,7 @@ It enhances the user's flexibility in setting their message limits and cost-opti
 </ul>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://vac.dev/rlog/rln-v3#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <ul>
-<li><a href="https://vac.dev/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a></li>
+<li><a href="https://research.logos.co/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a></li>
 <li><a href="https://github.com/rate-limiting-nullifier/circom-rln" target="_blank" rel="noopener noreferrer">RLN Circuits</a></li>
 <li><a href="https://eprint.iacr.org/2016/260.pdf" target="_blank" rel="noopener noreferrer">Groth16</a></li>
 <li><a href="https://docs.gnark.consensys.io/" target="_blank" rel="noopener noreferrer">Gnark</a></li>
@@ -4600,7 +4600,7 @@ It enhances the user's flexibility in setting their message limits and cost-opti
             <content:encoded><![CDATA[<p>How resource-restricted devices can verify RLN proofs fast and efficiently.</p>
 <!-- -->
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="introduction">Introduction<a href="https://vac.dev/rlog/rln-light-verifiers#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
-<p>Recommended previous reading: <a href="https://vac.dev/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a>.</p>
+<p>Recommended previous reading: <a href="https://research.logos.co/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a>.</p>
 <p>This post expands upon ideas described in the previous post,
 focusing on how resource-restricted devices can verify RLN proofs fast and efficiently.</p>
 <p>Previously, it was required to fetch all the memberships from the smart contract,
@@ -4704,7 +4704,7 @@ Consequently, it allows for a more scalable and efficient RLN verifier.</p>
 <li><a href="https://rfc.vac.dev/vac/32/rln-v1" target="_blank" rel="noopener noreferrer">RLN-V1 RFC</a></li>
 <li><a href="https://rfc.vac.dev/vac/raw/rln-v2" target="_blank" rel="noopener noreferrer">RLN-V2 RFC</a></li>
 <li><a href="https://hackmd.io/7cBCMU5hS5OYv8PTaW2wAQ?view" target="_blank" rel="noopener noreferrer">RLN Implementers guide</a></li>
-<li><a href="https://vac.dev/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a></li>
+<li><a href="https://research.logos.co/rlog/rln-anonymous-dos-prevention" target="_blank" rel="noopener noreferrer">Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku</a></li>
 </ul>]]></content:encoded>
         </item>
         <item>
@@ -5498,7 +5498,7 @@ external verification, incentivization, and cost-effective verification over exe
 </ul>
 </li>
 <li>
-<p>Solutions<sup><a href="https://vac.dev/rlog/Nescience-A-zkVM-leveraging-hiding-properties#user-content-fn-1-c890aa" id="user-content-fnref-1-c890aa" data-footnote-ref="true" aria-describedby="footnote-label">1</a></sup>:</p>
+<p>Solutions<sup><a href="https://vac.dev/rlog/Nescience-A-zkVM-leveraging-hiding-properties#user-content-fn-1-68e525" id="user-content-fnref-1-68e525" data-footnote-ref="true" aria-describedby="footnote-label">1</a></sup>:</p>
 <ul>
 <li>
 <p>Implement a dynamic reward system that adjusts based on network metrics and provers' performance.</p>
@@ -5808,7 +5808,7 @@ This intricate balance, while challenging, aims to fortify our system against po
 <!-- -->
 <section data-footnotes="true" class="footnotes"><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5 sr-only" id="footnote-label">Footnotes<a href="https://vac.dev/rlog/Nescience-A-zkVM-leveraging-hiding-properties#footnote-label" class="hash-link" aria-label="Direct link to Footnotes" title="Direct link to Footnotes">​</a></h2>
 <ol>
-<li id="user-content-fn-1-c890aa">
+<li id="user-content-fn-1-68e525">
 <p>Incentive Mechanisms:</p>
 <ul>
 <li>
@@ -5824,7 +5824,7 @@ Dishonest behavior results in slashing (partial or complete loss) of the staked 
 aligning incentives with the blockchain’s broader consensus mechanism.</p>
 </li>
 </ul>
-<a href="https://vac.dev/rlog/Nescience-A-zkVM-leveraging-hiding-properties#user-content-fnref-1-c890aa" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a>
+<a href="https://vac.dev/rlog/Nescience-A-zkVM-leveraging-hiding-properties#user-content-fnref-1-68e525" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a>
 </li>
 </ol>
 </section>]]></content:encoded>
@@ -5837,7 +5837,7 @@ aligning incentives with the blockchain’s broader consensus mechanism.</p>
             <description><![CDATA[Device pairing and secure message exchange using Waku and noise protocol.]]></description>
             <content:encoded><![CDATA[<p>Device pairing and secure message exchange using Waku and noise protocol.</p>
 <!-- -->
-<p>As the world becomes increasingly connected through the internet, the need for secure and reliable communication becomes paramount. In <a href="https://vac.dev/wakuv2-noise" target="_blank" rel="noopener noreferrer">this article</a> it is described how the Noise protocol can be used as a key-exchange mechanism for Waku.</p>
+<p>As the world becomes increasingly connected through the internet, the need for secure and reliable communication becomes paramount. In <a href="https://research.logos.co/wakuv2-noise" target="_blank" rel="noopener noreferrer">this article</a> it is described how the Noise protocol can be used as a key-exchange mechanism for Waku.</p>
 <p>Recently, this feature was introduced in <a href="https://github.com/waku-org/js-noise" target="_blank" rel="noopener noreferrer">js-waku</a> and <a href="https://github.com/waku-org/go-waku" target="_blank" rel="noopener noreferrer">go-waku</a>, providing a simple API for developers to implement secure communication protocols using the Noise Protocol framework. These open-source libraries provide a solid foundation for building secure and decentralized applications that prioritize data privacy and security.</p>
 <p>This functionality is designed to be simple and easy to use, even for developers who are not experts in cryptography. The library offers a clear and concise API that abstracts away the complexity of the Noise Protocol framework and provides an straightforward interface for developers to use. Using this, developers can effortlessly implement secure communication protocols on top of their JavaScript and Go applications, without having to worry about the low-level details of cryptography.</p>
 <p>One of the key benefits of using Noise is that it provides end-to-end encryption, which means that the communication between two parties is encrypted from start to finish. This is essential for ensuring the security and privacy of sensitive information</p>
@@ -5863,7 +5863,7 @@ aligning incentives with the blockchain’s broader consensus mechanism.</p>
 <p>Don't hesitate to try the live example at <a href="https://examples.waku.org/noise-js" target="_blank" rel="noopener noreferrer">https://examples.waku.org/noise-js</a> and build your own webapp using <a href="https://github.com/waku-org/js-noise" target="_blank" rel="noopener noreferrer">https://github.com/waku-org/js-noise</a>, <a href="https://github.com/waku-org/js-waku" target="_blank" rel="noopener noreferrer">https://github.com/waku-org/js-waku</a> and <a href="https://github.com/waku-org/go-waku" target="_blank" rel="noopener noreferrer">https://github.com/waku-org/go-waku</a>. This will give you a hands-on experience of implementing secure communication protocols using the Noise Protocol framework in a practical setting. Happy coding!</p>
 <h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://vac.dev/rlog/device-pairing-in-js-waku-and-go-waku#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h3>
 <ul>
-<li><a href="https://vac.dev/wakuv2-noise" target="_blank" rel="noopener noreferrer">Noise handshakes as key-exchange mechanism for Waku</a></li>
+<li><a href="https://research.logos.co/wakuv2-noise" target="_blank" rel="noopener noreferrer">Noise handshakes as key-exchange mechanism for Waku</a></li>
 <li><a href="https://github.com/waku-org/specs/blob/master/standards/application/noise.md" target="_blank" rel="noopener noreferrer">Noise Protocols for Waku Payload Encryption</a></li>
 <li><a href="https://github.com/waku-org/specs/blob/master/standards/application/noise-sessions.md" target="_blank" rel="noopener noreferrer">Session Management for Waku Noise</a></li>
 <li><a href="https://github.com/waku-org/specs/blob/master/standards/application/device-pairing.md" target="_blank" rel="noopener noreferrer">Device pairing and secure transfers with Noise</a></li>

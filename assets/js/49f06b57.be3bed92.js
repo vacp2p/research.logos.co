@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkresearch_logos_co=self.webpackChunkresearch_logos_co||[]).push([[912],{82028:s=>{s.exports=JSON.parse('{"blogBasePath":"/rlog","blogTitle":"Research Blog","authorsListPath":"/rlog/authors"}')}}]);

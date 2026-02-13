@@ -1,15 +1,15 @@
 {
-    "timestamp": "2026-02-12T18:43:43Z",
+    "timestamp": "2026-02-13T14:54:15Z",
     "git": {
-        "commit": "97800b52017acc0c558b090fb61e4bc5a701d656",
+        "commit": "48bbe1ced448745b85bbe791a81e677ed1472871",
         "branch": "origin/master",
-        "url": "git@github.com:vacp2p/vac.dev.git"
+        "url": "git@github.com:vacp2p/research.logos.co.git"
     },
     "build": {
-        "id": "4747",
-        "number": "4747",
-        "name": "website/vac.dev",
+        "id": "4748",
+        "number": "4748",
+        "name": "website/research.logos.co",
         "slave": "linux-02",
-        "url": "https://ci.infra.status.im/job/website/job/vac.dev/4747/"
+        "url": "https://ci.infra.status.im/job/website/job/research.logos.co/4748/"
     }
 }
