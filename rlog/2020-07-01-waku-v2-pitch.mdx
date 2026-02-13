@@ -8,7 +8,7 @@ published: true
 slug: waku-v2-plan
 categories: research
 image: /img/status_scaling_model_fig4.png
-discuss: https://forum.vac.dev/t/waku-version-2-pitch/52
+discuss: https://forum.research.logos.co/t/waku-version-2-pitch/52
 ---
 
 Read about our plans for Waku v2, moving to libp2p, better routing, adaptive nodes and accounting!
@@ -120,7 +120,7 @@ As early as possible we want to integrate with Core via Stimbus in order to miti
 
 ### 4. Topic interest behavior
 
-While we target full node traffic here, we want to make sure we maintain the existing bandwidth requirements for light nodes that Waku v1 addressed (https://vac.dev/fixing-whisper-with-waku). This means implementing topic-interest in the form of Waku topics. Note that this would be separate from app topics notes above.
+While we target full node traffic here, we want to make sure we maintain the existing bandwidth requirements for light nodes that Waku v1 addressed (https://research.logos.co/fixing-whisper-with-waku). This means implementing topic-interest in the form of Waku topics. Note that this would be separate from app topics notes above.
 
 ### 5. Historical message caching
 
@@ -160,7 +160,7 @@ This one is slightly more speculative in terms of its ultimate impact. The basic
 ![](/img/status_scaling_model_fig12.png)
 ![](/img/status_scaling_model_fig13.png)
 
-Note that this means a light node that listens to several topics would have to be connected to more full nodes to get connectivity. For a more exotic version of this, see https://forum.vac.dev/t/rfc-topic-propagation-extension-to-libp2p-pubsub/47
+Note that this means a light node that listens to several topics would have to be connected to more full nodes to get connectivity. For a more exotic version of this, see https://forum.research.logos.co/t/rfc-topic-propagation-extension-to-libp2p-pubsub/47
 
 This is orthogonal from the choice of FloodSub or GossipSub, but due to GossipSub's more dynamic nature it is likely best combined with it.
 
@@ -172,7 +172,7 @@ Not a primary focus, but worth a look. Looking at the scaling model, there might
 
 This is where we make sure the network isn't fragile, become a true p2p app, get our users excited and engaged, and allow us to scale the network without creating an even bigger cluster.
 
-To work in practice, this has a soft dependency on node discovery such as DNS based discovery (https://eips.ethereum.org/EIPS/eip-1459) or Discovery v5 (https://vac.dev/feasibility-discv5).
+To work in practice, this has a soft dependency on node discovery such as DNS based discovery (https://eips.ethereum.org/EIPS/eip-1459) or Discovery v5 (https://research.logos.co/feasibility-discv5).
 
 ### 1. Adaptive nodes and capabilities
 
@@ -190,7 +190,7 @@ This is based on a few principles:
 2.  We can account for the difference in contribution in some fashion
 3.  We want to incentivize nodes to tell the true, and be incentivized not to lie
 
-Accounting here is a stepping stone, where accounting is the raw data upon which some settlement later occurs. It can have various forms of granularity. See https://forum.vac.dev/t/accounting-for-resources-in-waku-and-beyond/31 for discussion.
+Accounting here is a stepping stone, where accounting is the raw data upon which some settlement later occurs. It can have various forms of granularity. See https://forum.research.logos.co/t/accounting-for-resources-in-waku-and-beyond/31 for discussion.
 
 We also note that in GossipSub, the mesh is bidrectional. Additionally, it doesn't appears to be a high priority issue in terms of nodes misreporting. What is an issue is having people run full nodes in the first place. There are a few points to that. It has to be possible in the end-user UX, nodes have to be discovered, and it has to be profitable/visible that you are contributing. UX and discovery are out of scope for this work, whereas visibility/accounting is part of this scope. Settlement is a stretch goal here.
 
@@ -206,7 +206,7 @@ While accounting for individual resource usage is useful, for the ultimate end u
 - online time
 - completeness of storage
 
-This can be gradually enhanced and strengthened, for example with proofs, consistency checks, Quality of Service, reputation systems. See https://discuss.status.im/t/network-incentivisation-first-draft/1037 for one attempt to provide stronger guarantees with periodic consistency checks and a shared fund mechanism. And https://forum.vac.dev/t/incentivized-messaging-using-validity-proofs/51 for using validity proofs and removing liveness requirement for settlement.
+This can be gradually enhanced and strengthened, for example with proofs, consistency checks, Quality of Service, reputation systems. See https://discuss.status.im/t/network-incentivisation-first-draft/1037 for one attempt to provide stronger guarantees with periodic consistency checks and a shared fund mechanism. And https://forum.research.logos.co/t/incentivized-messaging-using-validity-proofs/51 for using validity proofs and removing liveness requirement for settlement.
 
 All of this is optional at this stage, because our goal here is to improve the status quo for user run nodes. Accounting at this stage should be visible and correspond to the net benefit a node provides to another.
 

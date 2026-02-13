@@ -7,7 +7,7 @@ authors: hanno
 published: true
 slug: introducing-nwaku
 categories: research
-discuss: https://forum.vac.dev/
+discuss: https://forum.research.logos.co/
 toc_min_heading_level: 2
 toc_max_heading_level: 5
 ---
@@ -18,14 +18,14 @@ Introducing nwaku, a Nim-based Waku v2 client, including a summary of recent dev
 
 ## Background
 
-If you've been following our [research log](https://vac.dev/research-log/),
+If you've been following our [research log](https://research.logos.co/research-log/),
 you'll know that many things have happened in the world of Waku v2 since [our last general update](/waku-v2-ethereum-coscup).
-In line with our [long term goals](https://vac.dev/#about),
+In line with our [long term goals](https://research.logos.co/#about),
 we've introduced new protocols,
 tweaked our existing protocols
 and expanded our team.
 We've also shown [in a series of practical experiments](/waku-v1-v2-bandwidth-comparison) that Waku v2 does indeed deliver on some of the [theoretical advantages](/waku-v2-plan) it was designed to have over its predecessor, Waku v1.
-A [sustainability and business workshop](https://forum.vac.dev/t/vac-sustainability-and-business-workshop/116) led to the formulation of a clearer vision for Vac as a team.
+A [sustainability and business workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/116) led to the formulation of a clearer vision for Vac as a team.
 
 From the beginning, our protocol development has been complemented by various client implementations of these protocols,
 first in [Nim](https://github.com/status-im/nim-waku),
@@ -133,7 +133,7 @@ The decision to separate the Waku Discovery v5 network from Ethereum's was made 
 This comes at a possible tradeoff in network resilience.
 We are considering merging with the Ethereum Discovery v5 network in future,
 or even implement a hybrid solution.
-[This post](https://forum.vac.dev/t/waku-v2-discv5-roadmap-discussion/121/8) explains the decision and future steps.
+[This post](https://forum.research.logos.co/t/waku-v2-discv5-roadmap-discussion/121/8) explains the decision and future steps.
 
 ## 5. Spam protection using RLN
 
@@ -178,7 +178,7 @@ We are working on [a set of features](https://github.com/vacp2p/research/issues/
 that will provide the general security properties Waku users may desire
 and do so in a modern and simple way.
 This is useful for applications outside of Status that want similar security guarantees.
-As a first step, we've already made good progress toward [integrating noise handshakes](https://forum.vac.dev/t/noise-handshakes-as-key-exchange-mechanism-for-waku2/130) as a key exchange mechanism in Waku v2.
+As a first step, we've already made good progress toward [integrating noise handshakes](https://forum.research.logos.co/t/noise-handshakes-as-key-exchange-mechanism-for-waku2/130) as a key exchange mechanism in Waku v2.
 
 ### Protocol incentivization
 
@@ -188,7 +188,7 @@ and punishing adversarial actions.
 This will increase the overall security of the network
 and encourage operators to run their own Waku nodes.
 In turn, the sustainability of Vac as an organization will be better guaranteed.
-As such, protocol incentivization was a major focus in our recent [Vac Sustainability and Business Workshop](https://forum.vac.dev/t/vac-sustainability-and-business-workshop/).
+As such, protocol incentivization was a major focus in our recent [Vac Sustainability and Business Workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/).
 Our first step here is to finish integrating RLN relay into Waku
 with blockchain interaction to manage members,
 punish spammers
@@ -197,7 +197,7 @@ After this, we want to design monetary incentivization for providers of `store`,
 This may also tie into a reputation mechanism for service nodes based on a network-wide consensus on service quality.
 A big challenge for protocol incentivization is doing it in a private fashion,
 so we can keep similar metadata protection guarantees as the Waku base layer.
-This ties into our focus on [Zero Knowledge tech](https://forum.vac.dev/t/vac-3-zk/97).
+This ties into our focus on [Zero Knowledge tech](https://forum.research.logos.co/t/vac-3-zk/97).
 
 ### Improved store capacity
 
@@ -239,7 +239,7 @@ there are some improvements planned for Discovery v5,
 including methods to increase security such as merging with the Ethereum Discovery v5 network,
 introducing explicit NAT traversal
 and utilizing [topic advertisement](https://github.com/ethereum/devp2p/blob/fa6428ada7385c13551873b2ae6ad2457c228eb8/discv5/discv5-theory.md#topic-advertisement).
-The [Waku v2 Discovery v5 Roadmap](https://forum.vac.dev/t/waku-v2-discv5-roadmap-discussion/121) contains more details.
+The [Waku v2 Discovery v5 Roadmap](https://forum.research.logos.co/t/waku-v2-discv5-roadmap-discussion/121) contains more details.
 
 #### _Generalized peer exchange_
 
@@ -281,15 +281,15 @@ You can also view the changelog for past releases [here](https://github.com/stat
 - [nim-waku](https://github.com/status-im/nim-waku)
 - [nim-waku releases](https://github.com/status-im/nim-waku/releases)
 - [Node Discovery Protocol v5 - Theory](https://github.com/ethereum/devp2p/blob/fa6428ada7385c13551873b2ae6ad2457c228eb8/discv5/discv5-theory.md)
-- [Noise handshakes](https://forum.vac.dev/t/noise-handshakes-as-key-exchange-mechanism-for-waku2/130)
+- [Noise handshakes](https://forum.research.logos.co/t/noise-handshakes-as-key-exchange-mechanism-for-waku2/130)
 - [RLN tutorial](https://github.com/status-im/nim-waku/blob/ee96705c7fbe4063b780ac43b7edee2f6c4e351b/docs/tutorial/rln-chat2-live-testnet.md)
-- [Vac `<3` ZK](https://forum.vac.dev/t/vac-3-zk/97)
-- [Vac About page](https://vac.dev/#about)
-- [Vac Research log](https://vac.dev/research-log/)
+- [Vac `<3` ZK](https://forum.research.logos.co/t/vac-3-zk/97)
+- [Vac About page](https://research.logos.co/#about)
+- [Vac Research log](https://research.logos.co/research-log/)
 - [Vac RFC site](https://rfc.vac.dev/)
-- [Vac Sustainability and Business Workshop](https://forum.vac.dev/t/vac-sustainability-and-business-workshop/)
+- [Vac Sustainability and Business Workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/)
 - [Waku Update](/waku-update)
 - [Waku v1 vs Waku v2: Bandwidth Comparison](/waku-v1-v2-bandwidth-comparison)
 - [Waku v2 Peer Exchange](https://github.com/vacp2p/rfc/issues/495)
-- [Waku v2 Discovery v5 Roadmap](https://forum.vac.dev/t/waku-v2-discv5-roadmap-discussion/121)
+- [Waku v2 Discovery v5 Roadmap](https://forum.research.logos.co/t/waku-v2-discv5-roadmap-discussion/121)
 - [What's the Plan for Waku v2?](/waku-v2-plan)

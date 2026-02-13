@@ -15,13 +15,13 @@ A research log. Asynchronous P2P messaging? Remote logs to the rescue!
 
 {/* truncate */}
 
-A big problem when doing end-to-end data sync between mobile nodes is that most devices are offline most of the time. With a naive approach, you quickly run into issues of 'ping-pong' behavior, where messages have to be constantly retransmitted. We saw some basic calculations of what this bandwidth multiplier looks like in a [previous post](https://vac.dev/p2p-data-sync-for-mobile).
+A big problem when doing end-to-end data sync between mobile nodes is that most devices are offline most of the time. With a naive approach, you quickly run into issues of 'ping-pong' behavior, where messages have to be constantly retransmitted. We saw some basic calculations of what this bandwidth multiplier looks like in a [previous post](https://research.logos.co/p2p-data-sync-for-mobile).
 
 While you could do some background processing, this is really battery-draining, and on iOS these capabilities are limited. A better approach instead is to loosen the constraint that two nodes need to be online at the same time. How do we do this? There are two main approaches, one is the _store and forward model_, and the other is a _remote log_.
 
 In the _store and forward_ model, we use an intermediate node that forward messages on behalf of the recipient. In the _remote log_ model, you instead replicate the data onto some decentralized storage, and have a mutable reference to the latest state, similar to DNS. While both work, the latter is somewhat more elegant and "pure", as it has less strict requirements of an individual node's uptime. Both act as a highly-available cache to smoothen over non-overlapping connection windows between endpoints.
 
-In this post we are going to describe how such a remote log schema could work. Specifically, how it enhances p2p data sync and takes care of the [following requirements](https://vac.dev/p2p-data-sync-for-mobile):
+In this post we are going to describe how such a remote log schema could work. Specifically, how it enhances p2p data sync and takes care of the [following requirements](https://research.logos.co/p2p-data-sync-for-mobile):
 
 > 3. MUST allow for mobile-friendly usage. By mobile-friendly we mean devices
 >    that are resource restricted, mostly-offline and often changing network.

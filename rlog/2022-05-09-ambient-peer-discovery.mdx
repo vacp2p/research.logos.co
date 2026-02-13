@@ -8,7 +8,7 @@ published: true
 slug: wakuv2-apd
 categories: research
 image: /img/waku_v2_discv5_random_walk_estimation.svg
-discuss: https://forum.vac.dev/t/discussion-waku-v2-ambient-peer-discovery/133
+discuss: https://forum.research.logos.co/t/discussion-waku-v2-ambient-peer-discovery/133
 _includes: [math]
 ---
 
@@ -50,7 +50,7 @@ Because of the modular design and the fact that Waku v2 has several discovery me
 This post covers the current state and future considerations of ambient peer discovery for Waku v2,
 and gives reason for changes and modifications we made or plan to make.
 The ambient peer discovery protocols currently supported by Waku v2 are a modified version of Ethereum's [Discovery v5](https://github.com/ethereum/devp2p/blob/6b0abc3d956a626c28dce1307ee9f546db17b6bd/discv5/discv5.md)
-and [DNS-based discovery](https://vac.dev/dns-based-discovery).
+and [DNS-based discovery](https://research.logos.co/dns-based-discovery).
 Waku v2 further supports [gossipsub's peer exchange protocol](https://github.com/libp2p/specs/blob/10712c55ab309086a52eec7d25f294df4fa96528/pubsub/gossipsub/gossipsub-v1.1.md#prune-backoff-and-peer-exchange).
 In addition, we plan to introduce protocols for general peer exchange and capability discovery, respectively.
 The former allows resource restricted nodes to outsource querying for peers to stronger peers,
@@ -70,7 +70,7 @@ Typically, static node lists only hold a small number of bootstrap nodes, which 
 ## DNS-based Discovery
 
 Compared to static node lists,
-[DNS-based discovery](https://vac.dev/dns-based-discovery) (specified in [EIP-1459](https://eips.ethereum.org/EIPS/eip-1459))
+[DNS-based discovery](https://research.logos.co/dns-based-discovery) (specified in [EIP-1459](https://eips.ethereum.org/EIPS/eip-1459))
 provides a more dynamic way of discovering bootstrap nodes.
 It is very efficient, can easily be handled by resource restricted devices and provides very good availability.
 In addition to a naive DNS approach, Ethereum's DNS-based discovery introduces efficient authentication leveraging [Merkle trees](https://en.wikipedia.org/wiki/Merkle_tree).
@@ -85,7 +85,7 @@ node list management can be delegated to various DNS zones managed by other enti
 
 A much more dynamic method of ambient peer discovery is [Discovery v5](https://github.com/ethereum/devp2p/blob/6b0abc3d956a626c28dce1307ee9f546db17b6bd/discv5/discv5.md), which is Ethereum's peer discovery protocol.
 It is based on the [Kademlia](https://en.wikipedia.org/wiki/Kademlia) distributed hashtable (DHT).
-An [introduction to discv5 and its history](https://vac.dev/kademlia-to-discv5), and a [discv5 Waku v2 feasibility study](https://vac.dev/feasibility-discv5)
+An [introduction to discv5 and its history](https://research.logos.co/kademlia-to-discv5), and a [discv5 Waku v2 feasibility study](https://vac.dev/feasibility-discv5)
 can be found in previous posts on this research log.
 
 We use Discovery v5 as an ambient peer discovery method for Waku v2 because it is decentralized, efficient, actively researched, and has web3 as its main application area.
@@ -344,9 +344,9 @@ To mitigate information leakage by transmitting peer lists, we plan to only repl
 - [ambient peer discovery](https://docs.libp2p.io/concepts/publish-subscribe/#discovery)
 - [Discovery v5](https://github.com/ethereum/devp2p/blob/6b0abc3d956a626c28dce1307ee9f546db17b6bd/discv5/discv5.md)
 - [Kademlia](https://en.wikipedia.org/wiki/Kademlia)
-- [Discv5 history](https://vac.dev/kademlia-to-discv5)
-- [Discv5 Waku v2 feasibility study](https://vac.dev/feasibility-discv5)
-- [DNS-based discovery](https://vac.dev/dns-based-discovery)
+- [Discv5 history](https://research.logos.co/kademlia-to-discv5)
+- [Discv5 Waku v2 feasibility study](https://research.logos.co/feasibility-discv5)
+- [DNS-based discovery](https://research.logos.co/dns-based-discovery)
 - [EIP-1459](https://eips.ethereum.org/EIPS/eip-1459)
 - [Merkle trees](https://en.wikipedia.org/wiki/Merkle_tree)
 - [Sybil attack](https://en.wikipedia.org/wiki/Sybil_attack)

@@ -5,7 +5,7 @@ authors: farooq
 published: true
 slug: gsub-largemsg-improvements
 categories: research
-discuss: https://forum.vac.dev/t/large-message-handling-in-gossipsub-potential-improvements/375
+discuss: https://forum.research.logos.co/t/large-message-handling-in-gossipsub-potential-improvements/375
 
 
 toc_min_heading_level: 2
@@ -309,8 +309,8 @@ it is difficult to cancel ongoing message transmission after receiving IMReceivi
 
 
 To streamline this process, a peer can immediately send an IMReceiving message (for every received preamble), 
-urging other mesh peers to defer sending the same message [[15](https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281),
-[16](https://forum.vac.dev/t/idontwant-message-impact/283)]. 
+urging other mesh peers to defer sending the same message [[15](https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281),
+[16](https://forum.research.logos.co/t/idontwant-message-impact/283)]. 
 
 The other peers can send this message if IDONTWANT is not received from the receiver during the wait interval.
 This approach can boost IDONTWANT benefits by considering ongoing transmissions for large messages. 
@@ -448,12 +448,12 @@ At the same time, strategies aimed at reducing store-and-forward delays
 
 It is worth mentioning that many of the strategies suggested in this post are ideas at different stages. 
 Some of these have already been explored and discussed to some extent [[5](https://hackmd.io/X1DoBHtYTtuGqYg0qK4zJw),
-[17](https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366),
-[18](https://vac.dev/rlog/gsub-idontwant-perf-eval/)].
+[17](https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366),
+[18](https://research.logos.co/rlog/gsub-idontwant-perf-eval/)].
 We are nearing the completion of a comprehensive performance evaluation of these approaches and will soon share the results of our findings. 
  
 Please feel free to join the discussion and leave feedback regarding this post in the 
-[VAC forum](https://forum.vac.dev/t/large-message-handling-in-gossipsub-potential-improvements/375).
+[VAC forum](https://forum.research.logos.co/t/large-message-handling-in-gossipsub-potential-improvements/375).
 
 
 ## References
@@ -485,11 +485,11 @@ Please feel free to join the discussion and leave feedback regarding this post i
 
 [14] IHAVE/IWANT Message Impact. Retrieved from https://github.com/vacp2p/nim-libp2p/issues/1101
 
-[15] Large Message Handling IDONTWANT + IMReceiving Messages. Retrieved from https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281
+[15] Large Message Handling IDONTWANT + IMReceiving Messages. Retrieved from https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281
 
-[16] IDONTWANT Message Impact. Retrieved from https://forum.vac.dev/t/idontwant-message-impact/283
+[16] IDONTWANT Message Impact. Retrieved from https://forum.research.logos.co/t/idontwant-message-impact/283
 
-[17] IWANT Message Impact. Retrieved from https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366
+[17] IWANT Message Impact. Retrieved from https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366
 
-[18] IDONTWANT Message Performance. Retrieved from https://vac.dev/rlog/gsub-idontwant-perf-eval/
+[18] IDONTWANT Message Performance. Retrieved from https://research.logos.co/rlog/gsub-idontwant-perf-eval/
 

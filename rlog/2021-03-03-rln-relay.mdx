@@ -8,7 +8,7 @@ published: true
 slug: rln-relay
 categories: reserach
 image: /img/rain.png
-discuss: https://forum.vac.dev/t/privacy-preserving-p2p-economic-spam-protection-in-waku-v2-with-rate-limiting-nullfiers/66
+discuss: https://forum.research.logos.co/t/privacy-preserving-p2p-economic-spam-protection-in-waku-v2-with-rate-limiting-nullfiers/66
 
 toc_min_heading_level: 2
 toc_max_heading_level: 5
@@ -88,7 +88,7 @@ The remainder of this post is all about the story of how to enforce this limit o
 
 ## Overview: Economic-Incentive Spam protection through Rate Limiting Nullifiers
 
-**Context**: We started the idea of economic-incentive spam protection more than a year ago and conducted a feasibility study to identify blockers and unknowns. The results are published in our prior [post](https://vac.dev/feasibility-semaphore-rate-limiting-zksnarks). Since then major progress has been made and the prior identified blockers that are listed below are now addressed. Kudos to [Barry WhiteHat](https://github.com/barryWhiteHat), [Onur Kilic](https://github.com/kilic), [Koh Wei Jie](https://github.com/weijiekoh/perpetualpowersoftau) for all of their hard work, research, and development which made this progress possible.
+**Context**: We started the idea of economic-incentive spam protection more than a year ago and conducted a feasibility study to identify blockers and unknowns. The results are published in our prior [post](https://research.logos.co/feasibility-semaphore-rate-limiting-zksnarks). Since then major progress has been made and the prior identified blockers that are listed below are now addressed. Kudos to [Barry WhiteHat](https://github.com/barryWhiteHat), [Onur Kilic](https://github.com/kilic), [Koh Wei Jie](https://github.com/weijiekoh/perpetualpowersoftau) for all of their hard work, research, and development which made this progress possible.
 
 - the proof time[^22] which was initially in the order of minutes ~10 mins and now is almost 0.5 seconds
 - the prover key size[^21] which was initially ~110MB and now is ~3.9MB
@@ -217,7 +217,7 @@ Thanks to Onur Kılıç for his explanation and pointers and for assisting with 
 [^15]: zkSNARKs: [https://link.springer.com/chapter/10.1007/978-3-662-49896-5_11](https://link.springer.com/chapter/10.1007/978-3-662-49896-5_11) and [https://coinpare.io/whitepaper/zcash.pdf](https://coinpare.io/whitepaper/zcash.pdf)
 [^16]: GossipSub: [https://docs.libp2p.io/concepts/publish-subscribe/](https://docs.libp2p.io/concepts/publish-subscribe/)
 [^17]: Waku Relay: https://rfc.vac.dev/waku/standards/core/11/relay
-[^18]: Prior blockers of RLN-Relay: [https://vac.dev/feasibility-semaphore-rate-limiting-zksnarks](https://vac.dev/feasibility-semaphore-rate-limiting-zksnarks)
+[^18]: Prior blockers of RLN-Relay: [https://research.logos.co/feasibility-semaphore-rate-limiting-zksnarks](https://vac.dev/feasibility-semaphore-rate-limiting-zksnarks)
 [^19]: The lack of Shamir secret sharing in zkSNARKs: [https://github.com/vacp2p/research/issues/10](https://github.com/vacp2p/research/issues/10)
 [^20]: The MPC required for zkSNARKs trusted setup: [https://github.com/vacp2p/research/issues/9](https://github.com/vacp2p/research/issues/9)
 [^21]: Prover key size: [https://github.com/vacp2p/research/issues/8](https://github.com/vacp2p/research/issues/8)

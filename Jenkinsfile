@@ -67,4 +67,4 @@ pipeline {
 
 def isMasterBranch() { GIT_BRANCH ==~ /.*master/ }
 def deployBranch() { isMasterBranch() ? 'deploy-master' : 'deploy-develop' }
-def deployDomain() { isMasterBranch() ? 'vac.dev' : 'dev.vac.dev' }
+def deployDomain() { isMasterBranch() ? 'research.logos.co' : 'dev-research.logos.co' }

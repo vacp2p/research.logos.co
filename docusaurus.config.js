@@ -7,8 +7,8 @@ import rehypeKatex from 'rehype-katex'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'VacResearch',
-  url: 'https://vac.dev/',
+  title: 'Logos Research',
+  url: 'https://research.logos.co/',
   baseUrl: '/',
 
   markdown: {

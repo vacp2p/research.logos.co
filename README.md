@@ -1,4 +1,4 @@
-This repository contains the source for vac.dev.
+This repository contains the source for https://research.logos.co/.
 
 # Vac Research Blog
 
@@ -10,8 +10,8 @@ You can use [Frontmatter](https://docusaurus.io/docs/markdown-features#front-mat
 
 ## CI/CD
 
-- [CI builds](https://ci.infra.status.im/job/website/job/vac.dev/) `master` and pushes to `deploy-master` branch, which is hosted at https://vac.dev/.
-- [CI builds](https://ci.infra.status.im/job/website/job/dev.vac.dev/) `develop` and pushes to `deploy-develop` branch, which is hosted at https://dev.vac.dev/.
+- [CI builds](https://ci.infra.status.im/job/website/job/research.logos.co/) `master` and pushes to `deploy-master` branch, which is hosted at <https://research.logos.co//>.
+- [CI builds](https://ci.infra.status.im/job/website/job/dev-research.logos.co/) `develop` and pushes to `deploy-develop` branch, which is hosted at <https://dev-research.logos.co//>.
 
 The hosting is done using [Caddy server with Git plugin for handling GitHub webhooks](https://github.com/status-im/infra-misc/blob/master/ansible/roles/caddy-git).
 
@@ -21,7 +21,7 @@ Information about deployed build can be also found in `/build.json` available on
 
 1. Create a new working branch from `develop`: `git checkout develop; git checkout -b my-changes`.
 2. Make your changes, push them to the `origin`, and open a Pull Request against the `develop` branch.
-3. After approval, merge the pull request, and verify the changes on the staging server (e.g., https://dev.vac.dev).
+3. After approval, merge the pull request, and verify the changes on the staging server (e.g., https://dev-research.logos.co/).
 4. When ready to promote changes to the live website, rebase the `master` branch on the staging changes: `git checkout master; git pull origin master; git rebase origin/develop; git push`.
 
 ### How to Run Locally

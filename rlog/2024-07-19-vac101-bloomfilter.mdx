@@ -227,11 +227,11 @@ Further, the probability of false positives in Cuckoo filters is lower than the 
 
 
 ## Combining Filters with RLN
-In a series of posts ([1](https://vac.dev/rlog/rln-anonymous-dos-prevention),[2](https://vac.dev/rlog/rln-v3/),[3](https://vac.dev/rlog/rln-light-verifiers)),
+In a series of posts ([1](https://research.logos.co/rlog/rln-anonymous-dos-prevention),[2](https://vac.dev/rlog/rln-v3/),[3](https://vac.dev/rlog/rln-light-verifiers)),
 various versons of rate limiting nullifiers (RLN) that are used by Waku has been discussed.
 RLN uses a sparse Merkle tree for the membership set.
 The computational power required to construct the Merkle tree prevent light clients from participating in verifying membership proofs.
-In [Verifying RLN Proofs in Light Clients with Subtrees](https://vac.dev/rlog/rln-light-verifiers),
+In [Verifying RLN Proofs in Light Clients with Subtrees](https://research.logos.co/rlog/rln-light-verifiers),
 it was proposed to move the membership set on-chain so that it would not be necessary for a light client to construct the entire Merkle tree locally.
 Unfortunately, the naive approach is not practical as the gas limit for a single call is too restrictive for an appropriately sized tree.
 Instead, it was proposed to make utilize of subtrees.
@@ -260,7 +260,7 @@ However, with the allowance of false positives, a light client can participate i
 - [David Wagner's Lecture Notes on Bloom filters](https://people.eecs.berkeley.edu/~daw/teaching/cs170-s03/Notes/lecture10.pdf)
 - [Mutator Sets and their Application to Scalable Privacy](https://eprint.iacr.org/2023/1208)
 - [Cuckoo Filter: Practically Better than Bloom](https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf)
-- [Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku](https://vac.dev/rlog/rln-anonymous-dos-prevention)
-- [RLN-v3: Towards a Flexible and Cost-Efficient Implementation](https://vac.dev/rlog/rln-v3/)
-- [Verifying RLN Proofs in Light Clients with Subtrees](https://vac.dev/rlog/rln-light-verifiers)
+- [Strengthening Anonymous DoS Prevention with Rate Limiting Nullifiers in Waku](https://research.logos.co/rlog/rln-anonymous-dos-prevention)
+- [RLN-v3: Towards a Flexible and Cost-Efficient Implementation](https://research.logos.co/rlog/rln-v3/)
+- [Verifying RLN Proofs in Light Clients with Subtrees](https://research.logos.co/rlog/rln-light-verifiers)
 - [RLN in details](https://rate-limiting-nullifier.github.io/rln-docs/rln_in_details.html)

@@ -8,7 +8,7 @@ published: true
 slug: gsub-idontwant-perf-eval
 
 categories: research
-discuss: https://forum.vac.dev/t/libp2p-gossipsub-idontwant-message-performance-impact/374
+discuss: https://forum.research.logos.co/t/libp2p-gossipsub-idontwant-message-performance-impact/374
 
 
 toc_min_heading_level: 2
@@ -88,11 +88,11 @@ compared to 500KB messages (18-21%).
 
 This is because downloading a large message may consume several hundred milliseconds. 
 During this time, a receiver will likely 
-[generate multiple IWANT requests](https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366) 
+[generate multiple IWANT requests](https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366) 
 for the same message, increasing bandwidth utilization. 
 
 Moreover, a peer can generate 
-[IDONTWANTs only after it has finished downloading the message](https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281). 
+[IDONTWANTs only after it has finished downloading the message](https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281). 
 A longer download time will result in simultaneous reception of the same message from other mesh members. 
 
 
@@ -112,7 +112,7 @@ Similar results are seen on our large-scale deployment runs
 ([running Waku nodes in Kubernetes](https://zealous-polka-dc7.notion.site/Nim-libp2p-v1-5-0-regression-testing-August-2024-25edba733c704ccaa411919555c5db1a)).
 
 Please feel free to join the discussion and leave feedback regarding this post in the
-[VAC forum](https://forum.vac.dev/t/libp2p-gossipsub-idontwant-message-performance-impact/374).
+[VAC forum](https://forum.research.logos.co/t/libp2p-gossipsub-idontwant-message-performance-impact/374).
 
 
 ## References
@@ -120,8 +120,8 @@ Please feel free to join the discussion and leave feedback regarding this post i
 - [GossipSub Specifications v1.2](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.2.md)
 - [GossipSub v1.2: IDONTWANT Control Message](https://github.com/libp2p/specs/pull/548)
 - [Number Duplicate Messages in Ethereum’s Gossipsub Network](https://ethresear.ch/t/number-duplicate-messages-in-ethereums-gossipsub-network/19921)
-- [IWANT Messages Impact on Latency ](https://forum.vac.dev/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366)
-- [Large Message Handling (IDONTWANT + IMReceiving)](https://forum.vac.dev/t/large-message-handling-idontwant-imreceiving/281)
-- [IDONTWANT Message Impact Before/After Message Validation](https://forum.vac.dev/t/idontwant-message-impact/283)
+- [IWANT Messages Impact on Latency ](https://forum.research.logos.co/t/iwant-messages-may-have-negative-impact-on-message-dissemination-latency-for-large-messages/366)
+- [Large Message Handling (IDONTWANT + IMReceiving)](https://forum.research.logos.co/t/large-message-handling-idontwant-imreceiving/281)
+- [IDONTWANT Message Impact Before/After Message Validation](https://forum.research.logos.co/t/idontwant-message-impact/283)
 - [GossipSub for Big Messages](https://hackmd.io/X1DoBHtYTtuGqYg0qK4zJw#2)
 - [Regression Test Results: nim-libp2p](https://zealous-polka-dc7.notion.site/Nim-libp2p-v1-5-0-regression-testing-August-2024-25edba733c704ccaa411919555c5db1a)

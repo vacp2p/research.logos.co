@@ -7,7 +7,7 @@ authors: oskarth
 published: true
 slug: waku-v2-update
 categories: research
-discuss: https://forum.vac.dev/t/discussion-waku-v2-update/56
+discuss: https://forum.research.logos.co/t/discussion-waku-v2-update/56
 ---
 
 A research log. Read on to find out what is going on with Waku v2, a messaging protocol. What has been happening? What is coming up next?
@@ -18,7 +18,7 @@ It has been a while since the last post. It is time for an update on Waku v2. As
 
 ## Recap
 
-In the last post ([Waku v2 plan](https://vac.dev/waku-v2-plan)) we explained the rationale of Waku v2 - the current Waku network is fragile and doesn't scale. To solve this, Waku v2 aims to reduce amplification factors and get more user run nodes. We broke the work down into three separate tracks.
+In the last post ([Waku v2 plan](https://research.logos.co/waku-v2-plan)) we explained the rationale of Waku v2 - the current Waku network is fragile and doesn't scale. To solve this, Waku v2 aims to reduce amplification factors and get more user run nodes. We broke the work down into three separate tracks.
 
 1. Track 1 - Move to libp2p
 2. Track 2 - Better routing
@@ -98,7 +98,7 @@ Aside from the things mentioned above, what is coming up next? There are a few a
 3. Privacy research. Study better and more rigorous privacy guarantees. E.g. how FloodSub/GossipSub behaves for common threat models, and how custom packet
    format can improve things like unlinkability.
 
-4. zkSnarks RLN for spam protection and incentivization. We studied this [last year](https://vac.dev/feasibility-semaphore-rate-limiting-zksnarks) and recent developments have made this relevant to study again. Create an [experimental spec/PoC](https://github.com/vacp2p/specs/issues/189) as an extension to the relay protocol. Kudos to Barry Whitehat and others like Kobi Gurkan and Koh Wei Jie for pushing this!
+4. zkSnarks RLN for spam protection and incentivization. We studied this [last year](https://research.logos.co/feasibility-semaphore-rate-limiting-zksnarks) and recent developments have made this relevant to study again. Create an [experimental spec/PoC](https://github.com/vacp2p/specs/issues/189) as an extension to the relay protocol. Kudos to Barry Whitehat and others like Kobi Gurkan and Koh Wei Jie for pushing this!
 
 5. Ethereum M2M messaging. Being able to run in the browser opens up a lot of doors, and there is an opportunity here to enable things like a decentralized WalletConnect, multi-sig transactions, voting and similar use cases. This was the original goal of Whisper, and we'd like to deliver on that.
 

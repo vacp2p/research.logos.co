@@ -28,7 +28,7 @@ As mentioned, it is essential for users to be able to validate the blockchain's 
 The property of compression and validation was solved in Bitcoin by the use of Merkle trees.
 Merkle trees were introduced first by Ralph Merkle in his dissertation [[1](https://www.ralphmerkle.com/papers/Thesis1979.pdf)].
 A Merkle tree is a data structure that compresses a digest of data to a constant size while still providing a method for proving membership of elements of the digest.
-A previous rlog[[2](https://vac.dev/rlog/rln-light-verifiers/)] described how Merkle trees with their proof of membership could be used for lightweight clients for RLN. 
+A previous rlog[[2](https://research.logos.co/rlog/rln-light-verifiers/)] described how Merkle trees with their proof of membership could be used for lightweight clients for RLN. 
 
 ## Tree structure
 
@@ -82,7 +82,7 @@ If possible, this would compromise the ledger since the blockchain's history cou
 Fortunately, Merkle trees are quite secure.
 In fact, Merkle trees can be used to both bind and hide a digest.
 
-The Merkle tree is able to bind a digest with one of the properties of hash functions (see our previous Vac 101 [[3](https://vac.dev/rlog/vac101-fiat-shamir#hash-functions)] for information on hash functions).
+The Merkle tree is able to bind a digest with one of the properties of hash functions (see our previous Vac 101 [[3](https://research.logos.co/rlog/vac101-fiat-shamir#hash-functions)] for information on hash functions).
 A hash function is collision resistant; it is infeasible for a malicious party to find two values share the same hash value.
 
 This collision resistance property, essentially, fixes the input to each leaf and into their parent, their parent's parent, and so on.
@@ -166,7 +166,7 @@ These values can be used to shorten the time needed to construct an SMT and the 
 
 ### Proof of nonmembership
 
-In the first Vac 101 [[5](https://vac.dev/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters)], we examined Bloom and Cuckoo filters that could be used for proof of membership and nonmembership.
+In the first Vac 101 [[5](https://research.logos.co/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters)], we examined Bloom and Cuckoo filters that could be used for proof of membership and nonmembership.
 However, the proof of membership may result in false positives due to collisions.
 This would affect nonmembership proofs as well.
 Sparse Merkle trees can be adapted to provide greater assurance that a given piece of data is not a member of the digest.
@@ -204,10 +204,10 @@ We will explore Verkle trees in a future Vac 101 edition.
 ## References
 
 - 1. [Secrecy, Authentication, and Public Key Systems](https://www.ralphmerkle.com/papers/Thesis1979.pdf) 
-- 2. [Verifying RLN Proofs in Light Clients with Subtrees](https://vac.dev/rlog/rln-light-verifiers/)
-- 3. [Vac 101: Transforming an Interactive Protocol to a Noninteractive Argument](https://vac.dev/rlog/vac101-fiat-shamir#hash-functions)
+- 2. [Verifying RLN Proofs in Light Clients with Subtrees](https://research.logos.co/rlog/rln-light-verifiers/)
+- 3. [Vac 101: Transforming an Interactive Protocol to a Noninteractive Argument](https://research.logos.co/rlog/vac101-fiat-shamir#hash-functions)
 - 4. [Capped merkle tree in Plonky2](https://github.com/0xPolygonZero/plonky2/blob/main/plonky2/src/hash/merkle_tree.rs)
-- 5. [Vac 101: Membership with Bloom Filters and Cuckoo Filters](https://vac.dev/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters)
+- 5. [Vac 101: Membership with Bloom Filters and Cuckoo Filters](https://research.logos.co/rlog/vac101-membership-with-bloom-filters-and-cuckoo-filters)
 - 6. [Verkle Trees](https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf)
 - 7. [Using polynomial commitments to replace state roots](https://ethresear.ch/t/using-polynomial-commitments-to-replace-state-roots/7095)
 - 8. [KZG polynomial commitments](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
