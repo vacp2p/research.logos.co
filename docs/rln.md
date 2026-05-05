@@ -58,16 +58,16 @@ Core components:
 
 ### Integrations / Use Cases
 
-- [Status Gasless L2](https://docs.status.network/general-info/gasless-transactions#rln)
+- [Status Gasless L2](https://docs.status.network/general-info/gasless-transactions#rln):
   In Status Network, RLN serves as the cryptographic rate-limiting layer that enables secure and fair gasless transactions. Instead of traditional gas fees, users are limited by cryptographic proofs based on RLN. Each user can send only a fixed number of transactions per epoch; exceeding this limit makes their secret key recoverable. RLN uses Sparse Merkle Trees for scalable membership management, supporting millions of accounts. The system operates through a Prover–Verifier model: the Prover generates an RLN proof for each transaction, while the Verifier in the Sequencer validates it. This architecture allows Status Layer 2 to process gasless, privacy-preserving, and spam-resistant transactions efficiently. See the implementation here: [rln.md](https://github.com/status-im/status-network-monorepo/blob/develop/status-network-contracts/docs/rln.md)
-- [Waku-rln-relay](https://arxiv.org/pdf/2207.00117)
+- [Waku-rln-relay](https://arxiv.org/pdf/2207.00117):
   In Logos Messaging, RLN is integrated into the gossip-based relay layer to enable privacy-preserving spam protection without relying on centralised moderation or heavy computational proof-of-work. The resulting protocol, WAKU-RLN-RELAY, limits the messaging rate of each peer through zero-knowledge proofs that verify group membership while keeping user identities private. If a participant exceeds the allowed message quota, their secret can be cryptographically revealed, resulting in a financial penalty, while honest peers who detect spammers are rewarded. This integration allows Logos Messaging to provide anonymous, decentralised, and spam-resistant messaging across heterogeneous networks. Check the [rln.waku.org](https://rln.waku.org/) RLN Membership on Linea Sepolia testnet.
-- [Railgun](https://docs.railgun.org/wiki/learn/privacy-system/community-broadcasters)
+- [Railgun](https://docs.railgun.org/wiki/learn/privacy-system/community-broadcasters):
   In the RAILGUN ecosystem, privacy is achieved fully on-chain through zero-knowledge cryptography, enabling users to interact privately with DeFi and smart contracts across Ethereum, BSC, Polygon, and Arbitrum without leaving their native chain. Since RAILGUN uses Logos Messaging as its communication layer, the same RLN-based anti-spam mechanisms described in the previous section apply here as well. This integration ensures that private transactions and messages remain secure, decentralised, and censorship-resistant while benefiting from Logos Messaging's efficient peer-to-peer messaging framework.
-- [TheGraph](https://docs.graphops.xyz/graphcast/radios/listener-radio?_highlight=waku#advanced-configuration)
+- [The Graph](https://docs.graphops.xyz/graphcast/radios/listener-radio?_highlight=waku#advanced-configuration):
   In the Graph ecosystem, Graphcast leverages Logos Messaging and RLN to enable real-time, spam-resistant, and privacy-preserving communication among Indexers. Instead of relying on costly on-chain broadcasts, Graphcast provides a peer-to-peer messaging layer where Indexers can exchange data such as subgraph integrity checks, query analytics, and coordination signals at near-zero cost. RLN ensures rate-limited, anonymous message delivery, preventing spam while maintaining low latency and privacy. Since Logos Messaging serves as the underlying communication protocol, the same RLN-based mechanisms described earlier apply, allowing The Graph network to scale coordination securely without incurring blockchain gas fees.
 
-### Talks & References
+### Talks and references
 
 - [Using RLN in a Peer to Peer Network | Aaryamann Challani | PROGCRYPTO](https://www.youtube.com/watch?v=7xDxv8F70Jg)
 - [0xPARC RLN YT](https://www.youtube.com/watch?v=OGhf991iTPc)
