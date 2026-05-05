@@ -94,7 +94,7 @@ The unit mainly works on base components, protocols, and their implementations.
 These include:
 
 * RLN ([RLNv1](https://rfc.vac.dev/vac/32/rln-v1), [RLNv2](https://rfc.vac.dev/vac/raw/rln-v2), [RLNv3](https://vac.dev/rlog/rln-v3)) and
-* its backend implementation [zerokit](https://github.com/vacp2p/zerokit),
+* its backend implementation [Zerokit](https://github.com/vacp2p/zerokit),
 * a decentralised version of MLS,
 * a libp2p-mix protocol,
 * as well as noise protocol channels and other cryptography-related aspects.
