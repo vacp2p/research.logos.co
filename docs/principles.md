@@ -10,7 +10,7 @@ hide_table_of_contents: true
 # Principles
 <br/>
 
-The goal of Vac is widespread adoption of the decentralised web.
+The goal of Logos Research is widespread adoption of the decentralised web.
 Our challenge is achieving mass adoption while staying true to the principles outlined below.
 
 ## I. Liberty
