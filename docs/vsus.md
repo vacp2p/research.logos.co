@@ -7,7 +7,7 @@ hide_table_of_contents: true
 
 Logos R&D Service Units are integral to supporting [IFT](https://free.technology) projects by researching and developing base components
 and secure, unbiased protocols.
-They implement them in software artefacts like [nim-libp2p](https://github.com/status-im/nim-libp2p) and [zerokit](https://github.com/vacp2p/zerokit).
+They implement them in software artefacts like [nim-libp2p](https://github.com/status-im/nim-libp2p) and [Zerokit](https://github.com/vacp2p/zerokit).
 These artefacts are designed to be readily usable by projects and accessible to the broader community beyond Logos.
 
 In addition to developing these base components and protocols,
