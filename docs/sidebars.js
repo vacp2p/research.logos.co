@@ -15,7 +15,7 @@ module.exports = {
         {
           type: 'link',
           label: 'Specs/RFCs',
-          href: 'https://rfc.vac.dev/ ',
+          href: 'https://lip.logos.co/ ',
         },
         {
           type: 'link',
