@@ -16,7 +16,7 @@ maximising the value and efficiency of our work.
 Part of our work is conducting applied [research](/research) that drives the development of cutting-edge protocols, libraries, [specifications](https://rfc.vac.dev/), and publications.
 Our dual approach combines hands-on development with in-depth research, allowing us to create robust solutions tailored to the needs of the Logos ecosystem, IFT projects, and decentralised technologies in general.
 
-Logos Research maintains an active [forum](https://forum.vac.dev/) and research platform, fostering collaboration and knowledge exchange within the broader community.
+Logos Research maintains an active [forum](https://forum.research.logos.co/) and research platform, fostering collaboration and knowledge exchange within the broader community.
 
 As custodians of the components and protocols we develop, we adhere [a set of principles](/principles) that guide our work,
 ensuring alignment with our values and objectives in advancing free and open technologies.

@@ -23,7 +23,7 @@ including identifying opportunities for and initiating new incubator projects.
 
 Please find the Logos R&D service units' roadmaps [here](https://roadmap.vac.dev/),
 the weekly updates [here](https://roadmap.vac.dev/tags/vac-updates),
-and our forum [here](https://forum.vac.dev/),
+and our forum [here](https://forum.research.logos.co/),
 where we encourage you to engage in discussions about R&D topics across Logos, the entire IFT,
 and the broader ecosystem beyond.
 

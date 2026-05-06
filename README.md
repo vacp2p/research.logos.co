@@ -1,6 +1,6 @@
 This repository contains the source for https://research.logos.co/.
 
-# Vac Research Blog
+# Logos Research Blog
 
 ## Adding posts
 
@@ -28,7 +28,7 @@ Information about deployed build can be also found in `/build.json` available on
 
 1. Clone this repository
 ```bash
-$ git clone git@github.com:vacp2p/vac.dev.git
+$ git clone git@github.com:vacp2p/research.logos.co.git
 ```
 
 2. Install the dependencies:

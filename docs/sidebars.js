@@ -20,7 +20,7 @@ module.exports = {
         {
           type: 'link',
           label: 'Forum',
-          href: 'https://forum.vac.dev/',
+          href: 'https://forum.research.logos.co/',
         },
       ],
     },

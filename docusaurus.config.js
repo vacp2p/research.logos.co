@@ -97,7 +97,7 @@ const config = {
             type: 'search',
           },
           {
-            label: 'About Vac',
+            label: 'About Logos Research',
             to: '/',
             activeBaseRegex: '^/$',
           },
