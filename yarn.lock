@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@acid-info/docusaurus-og@^1.0.3-beta.2":
-  version "1.0.3-beta.2"
-  resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-og/-/docusaurus-og-1.0.3-beta.2.tgz#9f5e412c0bc51d152e9c2bc346ee5aae80d581bb"
-  integrity sha512-clVVnLTcPGi073381+hVCC6x/HSQndCs+kSJ4+98akg2NAQkZkweGHvRdgDv66jdKADe9h+K3f3hF6Rdn7jntQ==
+"@acid-info/docusaurus-og@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
+  version "1.0.3-topic-chore-update-vac-assets.3"
+  resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-og/-/docusaurus-og-1.0.3-topic-chore-update-vac-assets.3.tgz#4ec0cc0acffd9676a1aac84fd39edae1544e43b9"
+  integrity sha512-v/kwqW1aTj32JNHhCG5tzl3qqwWs5zwBXeMN60MPNs0XISfnbEy3nZM9s+1YOW1VdCdYKEYdwCtCn4ihOcq8Tg==
   dependencies:
     "@docusaurus/core" "3.8.1"
     "@docusaurus/module-type-aliases" "3.8.1"
@@ -19,12 +19,14 @@
     satori "^0.10.1"
     sharp "^0.32.1"
 
-"@acid-info/logos-docusaurus-preset@file:../logos-docusaurus-plugins/packages/logos-docusaurus-preset":
-  version "1.0.3-beta.11"
+"@acid-info/logos-docusaurus-preset@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
+  version "1.0.3-topic-chore-update-vac-assets.3"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.3-topic-chore-update-vac-assets.3.tgz#979e33e8aacd38f585fca90c76879d979844c38e"
+  integrity sha512-xA7WWvevQgh0+PYHiYLWTMC80rpWFVucZ1/hEeNFGdRAFuG40YTBRf7OPB+DeiXIbxRki597hKp7i2vyDUQtXg==
   dependencies:
-    "@acid-info/docusaurus-og" "^1.0.3-beta.2"
-    "@acid-info/logos-docusaurus-search-local" "^1.0.3-beta.2"
-    "@acid-info/logos-docusaurus-theme" "^1.0.3-beta.11"
+    "@acid-info/docusaurus-og" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
+    "@acid-info/logos-docusaurus-search-local" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
+    "@acid-info/logos-docusaurus-theme" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
     "@docusaurus/core" "3.8.1"
     "@docusaurus/module-type-aliases" "3.8.1"
     "@docusaurus/preset-classic" "3.8.1"
@@ -38,10 +40,10 @@
     lodash "^4.17.21"
     node-fetch "2"
 
-"@acid-info/logos-docusaurus-search-local@^1.0.3-beta.2":
-  version "1.0.3-beta.2"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-search-local/-/logos-docusaurus-search-local-1.0.3-beta.2.tgz#af79fec8513d124d7dd3b6fe7c967f7bd322984c"
-  integrity sha512-W+gDE7X1afJVyf3vwIzMmSrkbeTWtmkalRV+3yQBqiwSqlKUAvqAg8x5jtkYr/h0/hxlMbLftILL8D7pR4yvTA==
+"@acid-info/logos-docusaurus-search-local@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
+  version "1.0.3-topic-chore-update-vac-assets.3"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-search-local/-/logos-docusaurus-search-local-1.0.3-topic-chore-update-vac-assets.3.tgz#28f70c9e9e4590fd4b406aa382a3fdd9e5ba4f70"
+  integrity sha512-zskGHaibh74ii6fcw7UkMimXpB+rL3omK+X07OlCO9MI7dJtklZT+M6YVk2xPpG7Cd05jqzn8gmkspff3lHyvA==
   dependencies:
     "@docusaurus/core" "3.8.1"
     "@docusaurus/module-type-aliases" "3.8.1"
@@ -52,12 +54,12 @@
     "@easyops-cn/docusaurus-search-local" "0.49.2"
     lodash "^4.17.21"
 
-"@acid-info/logos-docusaurus-theme@^1.0.3-beta.11":
-  version "1.0.3-beta.11"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.3-beta.11.tgz#dde53935686847f3c7eaa852f813b5eb40b88089"
-  integrity sha512-baFC9oG8NszlLtrQPtazZW5JHdjCDDSDAA2IEN3TFdt0AHwHYDAEASVXSIP2Hfwu666/fJTzgTnfFptwQtE2bA==
+"@acid-info/logos-docusaurus-theme@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
+  version "1.0.3-topic-chore-update-vac-assets.3"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.3-topic-chore-update-vac-assets.3.tgz#358d345f2241405cef8b52dc326022e175511a6a"
+  integrity sha512-lyIsDMLWwYqwozBBR24lisdwFvjPFzS/ljH2Od2vyVsiTRtClOXzia31++THab6ixAMxIIKe9AZGZSYXSyp54w==
   dependencies:
-    "@acid-info/docusaurus-og" "^1.0.3-beta.2"
+    "@acid-info/docusaurus-og" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
     "@acid-info/lsd-react" "0.2.0-beta.2"
     "@docusaurus/core" "3.8.1"
     "@docusaurus/mdx-loader" "3.8.1"
