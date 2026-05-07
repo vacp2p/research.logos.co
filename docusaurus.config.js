@@ -124,7 +124,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/vacp2p',
+                href: 'https://x.com/LogosRnD',
               },
               {
                 label: 'Discord',
