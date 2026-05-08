@@ -19,10 +19,10 @@
     satori "^0.10.1"
     sharp "^0.32.1"
 
-"@acid-info/logos-docusaurus-preset@1.0.3-topic-chore-update-vac-assets.4+05c5868":
-  version "1.0.3-topic-chore-update-vac-assets.4"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.3-topic-chore-update-vac-assets.4.tgz#6422e70aaf5f475c98d632666308b979d615e88d"
-  integrity sha512-6I7gwftxNqMAQ7EYTgf2Jm3SqWZFVeh1ekL98hcHssCFgjsqNegl8gjsnnEKoRCBpIfr2DyL0aYZk/LuVgQcNA==
+"@acid-info/logos-docusaurus-preset@1.0.3-topic-chore-update-vac-assets.5+f7d474e":
+  version "1.0.3-topic-chore-update-vac-assets.5"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.3-topic-chore-update-vac-assets.5.tgz#7fba141d23e323e8eab6d888cd469fa2f369ce02"
+  integrity sha512-irlS5ZFG6GOvg02Vb6oC2UpvIDLUKYTtyTS8FeKSpXvk2tVov/6edMyLpP6yHZGO22Iqxu0HiyCYzXEjFDXkUQ==
   dependencies:
     "@acid-info/docusaurus-og" "1.0.3"
     "@acid-info/logos-docusaurus-search-local" "1.0.3"

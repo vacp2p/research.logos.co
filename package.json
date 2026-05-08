@@ -15,7 +15,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@acid-info/logos-docusaurus-preset": "1.0.3-topic-chore-update-vac-assets.4+05c5868",
+    "@acid-info/logos-docusaurus-preset": "1.0.3-topic-chore-update-vac-assets.5+f7d474e",
     "@docusaurus/plugin-client-redirects": "3.8.1",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
