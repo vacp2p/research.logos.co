@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@acid-info/docusaurus-og@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
-  version "1.0.3-topic-chore-update-vac-assets.3"
-  resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-og/-/docusaurus-og-1.0.3-topic-chore-update-vac-assets.3.tgz#4ec0cc0acffd9676a1aac84fd39edae1544e43b9"
-  integrity sha512-v/kwqW1aTj32JNHhCG5tzl3qqwWs5zwBXeMN60MPNs0XISfnbEy3nZM9s+1YOW1VdCdYKEYdwCtCn4ihOcq8Tg==
+"@acid-info/docusaurus-og@1.0.3", "@acid-info/docusaurus-og@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-og/-/docusaurus-og-1.0.3.tgz#6fc50ff333d438980c3fe4dc556f1f1945cd54c1"
+  integrity sha512-XmS04lhiTo+4pbvMbdx1p/A0xV7l9OClhuvL1OG9D0oOSWlL8KBtgmijEhe+OqT4fxO6QkDnNUlUaoCII7c+KA==
   dependencies:
     "@docusaurus/core" "3.8.1"
     "@docusaurus/module-type-aliases" "3.8.1"
@@ -19,14 +19,14 @@
     satori "^0.10.1"
     sharp "^0.32.1"
 
-"@acid-info/logos-docusaurus-preset@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
-  version "1.0.3-topic-chore-update-vac-assets.3"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.3-topic-chore-update-vac-assets.3.tgz#979e33e8aacd38f585fca90c76879d979844c38e"
-  integrity sha512-xA7WWvevQgh0+PYHiYLWTMC80rpWFVucZ1/hEeNFGdRAFuG40YTBRf7OPB+DeiXIbxRki597hKp7i2vyDUQtXg==
+"@acid-info/logos-docusaurus-preset@1.0.3-topic-chore-update-vac-assets.4+05c5868":
+  version "1.0.3-topic-chore-update-vac-assets.4"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.3-topic-chore-update-vac-assets.4.tgz#6422e70aaf5f475c98d632666308b979d615e88d"
+  integrity sha512-6I7gwftxNqMAQ7EYTgf2Jm3SqWZFVeh1ekL98hcHssCFgjsqNegl8gjsnnEKoRCBpIfr2DyL0aYZk/LuVgQcNA==
   dependencies:
-    "@acid-info/docusaurus-og" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
-    "@acid-info/logos-docusaurus-search-local" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
-    "@acid-info/logos-docusaurus-theme" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
+    "@acid-info/docusaurus-og" "1.0.3"
+    "@acid-info/logos-docusaurus-search-local" "1.0.3"
+    "@acid-info/logos-docusaurus-theme" "1.0.3"
     "@docusaurus/core" "3.8.1"
     "@docusaurus/module-type-aliases" "3.8.1"
     "@docusaurus/preset-classic" "3.8.1"
@@ -40,10 +40,10 @@
     lodash "^4.17.21"
     node-fetch "2"
 
-"@acid-info/logos-docusaurus-search-local@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
-  version "1.0.3-topic-chore-update-vac-assets.3"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-search-local/-/logos-docusaurus-search-local-1.0.3-topic-chore-update-vac-assets.3.tgz#28f70c9e9e4590fd4b406aa382a3fdd9e5ba4f70"
-  integrity sha512-zskGHaibh74ii6fcw7UkMimXpB+rL3omK+X07OlCO9MI7dJtklZT+M6YVk2xPpG7Cd05jqzn8gmkspff3lHyvA==
+"@acid-info/logos-docusaurus-search-local@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-search-local/-/logos-docusaurus-search-local-1.0.3.tgz#5804f058524a8e296d9df9171b163187501c3295"
+  integrity sha512-1Wcs17hxFgmCHpAMK62OZvX0olr5WfL6L3yDaRyTXPHJTQkHklxJTbYz9fBJj7Ohi/WLTzPcr7LDG7HyJCTyXA==
   dependencies:
     "@docusaurus/core" "3.8.1"
     "@docusaurus/module-type-aliases" "3.8.1"
@@ -54,12 +54,12 @@
     "@easyops-cn/docusaurus-search-local" "0.49.2"
     lodash "^4.17.21"
 
-"@acid-info/logos-docusaurus-theme@1.0.3-topic-chore-update-vac-assets.3+b3f6fc1":
-  version "1.0.3-topic-chore-update-vac-assets.3"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.3-topic-chore-update-vac-assets.3.tgz#358d345f2241405cef8b52dc326022e175511a6a"
-  integrity sha512-lyIsDMLWwYqwozBBR24lisdwFvjPFzS/ljH2Od2vyVsiTRtClOXzia31++THab6ixAMxIIKe9AZGZSYXSyp54w==
+"@acid-info/logos-docusaurus-theme@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.3.tgz#b9df9471974ba0087c36791594e93970cfaa5a9c"
+  integrity sha512-QyI6LJZLVybVsORZWK+JYTXi4crvWe3eB9m2AYS3sU88QP7C8bir06428z9yzcoatLNczy4ij8pRiZa5yh4PlQ==
   dependencies:
-    "@acid-info/docusaurus-og" "1.0.3-topic-chore-update-vac-assets.3+b3f6fc1"
+    "@acid-info/docusaurus-og" "^1.0.3"
     "@acid-info/lsd-react" "0.2.0-beta.2"
     "@docusaurus/core" "3.8.1"
     "@docusaurus/mdx-loader" "3.8.1"
