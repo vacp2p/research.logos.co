@@ -15,12 +15,12 @@ module.exports = {
         {
           type: 'link',
           label: 'Specs/RFCs',
-          href: 'https://rfc.vac.dev/ ',
+          href: 'https://lip.logos.co/ ',
         },
         {
           type: 'link',
           label: 'Forum',
-          href: 'https://forum.vac.dev/',
+          href: 'https://forum.research.logos.co/',
         },
       ],
     },

@@ -5,12 +5,12 @@ hide_table_of_contents: true
 
 # 
 
-*These principles have been inherited from https://our.status.im/our-principles/. Only minor stylistic changes have been made to them.*
+*These principles have been inherited from https://status.app/manifesto. Only minor stylistic changes have been made to them.*
 
 # Principles
 <br/>
 
-The goal of Vac is widespread adoption of the decentralised web.
+The goal of Logos Research is widespread adoption of the decentralised web.
 Our challenge is achieving mass adoption while staying true to the principles outlined below.
 
 ## I. Liberty

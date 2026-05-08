@@ -97,7 +97,7 @@ const config = {
             type: 'search',
           },
           {
-            label: 'About Vac',
+            label: 'About Logos Research',
             to: '/',
             activeBaseRegex: '^/$',
           },
@@ -124,7 +124,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/vacp2p',
+                href: 'https://x.com/LogosRnD',
               },
               {
                 label: 'Discord',

@@ -25,7 +25,7 @@ we've introduced new protocols,
 tweaked our existing protocols
 and expanded our team.
 We've also shown [in a series of practical experiments](/waku-v1-v2-bandwidth-comparison) that Waku v2 does indeed deliver on some of the [theoretical advantages](/waku-v2-plan) it was designed to have over its predecessor, Waku v1.
-A [sustainability and business workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/116) led to the formulation of a clearer vision for Vac as a team.
+A [sustainability and business workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/116) led to the formulation of a clearer vision for Logos Research as a team.
 
 From the beginning, our protocol development has been complemented by various client implementations of these protocols,
 first in [Nim](https://github.com/status-im/nim-waku),
@@ -43,7 +43,7 @@ This post looks at some recent developments within the Nim client.
 ## 1. _**nim-waku**_ is now known as _**nwaku**_
 
 Pronounced NWHA-koo.
-You may already have seen us refer to "`nwaku`" on Vac communication channels,
+You may already have seen us refer to "`nwaku`" on Logos Research communication channels,
 but it is now official:
 The `nim-waku` Waku v2 client has been named `nwaku`.
 Why? Well, we needed a recognizable name for our client that could easily be referred to in everyday conversations
@@ -83,7 +83,7 @@ Some of the more significant productionization efforts over the last couple of m
 More stability issues may be addressed in future as `nwaku` matures,
 but we've noticed a marked improvement in the reliability of running `nwaku` nodes.
 These include environments where `nwaku` nodes are expected to run with a long uptime.
-Vac currently operates two long-running fleets of `nwaku` nodes, `wakuv2.prod` and `wakuv2.test`,
+Logos Research currently operates two long-running fleets of `nwaku` nodes, `wakuv2.prod` and `wakuv2.test`,
 for internal dogfooding and
 to serve as experimental bootstrapping nodes.
 Status has also recently deployed similar fleets for production and testing based on `nwaku`.
@@ -142,7 +142,7 @@ that provided spam protection using [Rate Limiting Nullifiers (RLN)](https://rfc
 The `nwaku` client now contains a working demonstration and integration of RLN relay.
 Check out [this tutorial](https://github.com/status-im/nim-waku/blob/ee96705c7fbe4063b780ac43b7edee2f6c4e351b/docs/tutorial/rln-chat2-live-testnet.md) to see the protocol in action using a toy chat application built on `nwaku`.
 We'd love for people to join us in dogfooding RLN spam protection as part of our operator incentive testnet.
-Feel free to join our [Vac Discord](https://discord.gg/KNj3ctuZvZ) server
+Feel free to join our [Logos Research Discord](https://discord.gg/KNj3ctuZvZ) server
 and head to the `#rln` channel for more information.
 
 ## Future work
@@ -156,7 +156,7 @@ We are starting to push for operators to run and maintain their own Waku v2 node
 preferably contributing to the default Waku v2 network as described by the default pubsub topic (`/waku/2/default-waku/proto`).
 Amongst other things, a large fleet of stable operator-run Waku v2 nodes will help secure the network,
 provide valuable services to a variety of applications
-and ensure the future sustainability of both Vac as a research organization and the Waku suite of protocols.
+and ensure the future sustainability of both Logos Research as a research organization and the Waku suite of protocols.
 
 We are targeting `nwaku` as the main option for operator-run nodes.  
 Specifically, we aim to provide through `nwaku`:
@@ -187,8 +187,8 @@ rewarding nodes providing costly services
 and punishing adversarial actions.
 This will increase the overall security of the network
 and encourage operators to run their own Waku nodes.
-In turn, the sustainability of Vac as an organization will be better guaranteed.
-As such, protocol incentivization was a major focus in our recent [Vac Sustainability and Business Workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/).
+In turn, the sustainability of Logos Research as an organization will be better guaranteed.
+As such, protocol incentivization was a major focus in our recent [Logos Research Sustainability and Business Workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/).
 Our first step here is to finish integrating RLN relay into Waku
 with blockchain interaction to manage members,
 punish spammers
@@ -258,7 +258,7 @@ This concludes a general outline of some of the main recent developments in the 
 and a summary of the current and future focus areas.
 Much more is happening behind the scenes, of course,
 so for more information, or to join the conversation,
-feel free to join our [Vac Discord](https://discord.gg/KNj3ctuZvZ) server
+feel free to join our [Logos Research Discord](https://discord.gg/KNj3ctuZvZ) server
 or to check out the [`nwaku` repo on Github](https://github.com/status-im/nim-waku).
 You can also view the changelog for past releases [here](https://github.com/status-im/nim-waku/releases).
 
@@ -283,11 +283,11 @@ You can also view the changelog for past releases [here](https://github.com/stat
 - [Node Discovery Protocol v5 - Theory](https://github.com/ethereum/devp2p/blob/fa6428ada7385c13551873b2ae6ad2457c228eb8/discv5/discv5-theory.md)
 - [Noise handshakes](https://forum.research.logos.co/t/noise-handshakes-as-key-exchange-mechanism-for-waku2/130)
 - [RLN tutorial](https://github.com/status-im/nim-waku/blob/ee96705c7fbe4063b780ac43b7edee2f6c4e351b/docs/tutorial/rln-chat2-live-testnet.md)
-- [Vac `<3` ZK](https://forum.research.logos.co/t/vac-3-zk/97)
-- [Vac About page](https://research.logos.co/#about)
-- [Vac Research log](https://research.logos.co/research-log/)
-- [Vac RFC site](https://rfc.vac.dev/)
-- [Vac Sustainability and Business Workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/)
+- [Logos Research `<3` ZK](https://forum.research.logos.co/t/vac-3-zk/97)
+- [Logos Research About page](https://research.logos.co/#about)
+- [Logos Research Research log](https://research.logos.co/research-log/)
+- [Logos Research RFC site](https://rfc.vac.dev/)
+- [Logos Research Sustainability and Business Workshop](https://forum.research.logos.co/t/vac-sustainability-and-business-workshop/)
 - [Waku Update](/waku-update)
 - [Waku v1 vs Waku v2: Bandwidth Comparison](/waku-v1-v2-bandwidth-comparison)
 - [Waku v2 Peer Exchange](https://github.com/vacp2p/rfc/issues/495)
