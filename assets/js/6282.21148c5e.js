@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkresearch_logos_co=self.webpackChunkresearch_logos_co||[]).push([[6282],{86282:(e,s,c)=>{c.d(s,{createTreemapServices:()=>r.d});var r=c(76609);c(72519)}}]);
