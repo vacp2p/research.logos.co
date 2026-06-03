@@ -13,6 +13,7 @@ pipeline {
 
   options {
     disableConcurrentBuilds()
+    timeout(time: 30, unit: 'MINUTES')
     /* manage how many builds we keep */
     buildDiscarder(logRotator(
       numToKeepStr: '20',
