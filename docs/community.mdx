@@ -1,0 +1,50 @@
+---
+title: Join the community
+hide_title: true
+pagination_prev: null
+pagination_next: null
+displayed_sidebar: null
+hide_table_of_contents: true
+---
+
+import { Grid, Box, SocialCard } from '/src/components/mdx'
+
+# Join the community
+
+<Box bottom={24}>
+<p>
+  Join the Logos Research community!
+</p>
+<p>
+  Keep up to date with our latest research by connecting with us on our community's channels.
+</p>
+</Box>
+
+<Box top={32} bottom={56} style={{paddingBottom: 0}}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href='https://x.com/LogosRnD'
+        logoSrc="/icons/x-black.svg"
+        logoSrcDark="/icons/x-white.svg"
+        description='Follow us on X'
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href='https://discord.com/invite/PQFdubGt6d'
+        logoSrc="/icons/discord-black.svg"
+        logoSrcDark="/icons/discord-white.svg"
+        description='Join the community on Discord'
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href="https://forum.research.logos.co/"
+        logoSrc="/theme/image/logo-black.svg"
+        logoSrcDark="/theme/image/logo.svg"
+        description="Share your thoughts on the latest research on the Logos Research forum"
+      />
+    </Grid.Item>
+  </Grid>
+</Box>
