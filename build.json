@@ -1,15 +1,15 @@
 {
-    "timestamp": "2026-09-05T19:05:58Z",
+    "timestamp": "2026-09-06T19:06:01Z",
     "git": {
         "commit": "dec2d7dcf654a505dfb451386118eac8c4777d02",
         "branch": "origin/master",
         "url": "git@github.com:vacp2p/research.logos.co.git"
     },
     "build": {
-        "id": "4959",
-        "number": "4959",
+        "id": "4960",
+        "number": "4960",
         "name": "website/research.logos.co",
         "slave": "linux-02",
-        "url": "https://ci.infra.status.im/job/website/job/research.logos.co/4959/"
+        "url": "https://ci.infra.status.im/job/website/job/research.logos.co/4960/"
     }
 }
